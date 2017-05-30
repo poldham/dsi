@@ -11,6 +11,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### About
 
-This repository contains information about digital sequence information to inform debates under the UN Convention on Biological Diversity. 
+This repository contains information about digital sequence information relevant to debates under the UN Convention on Biological Diversity. 
 
-To download files in the folders used the Download button. 
+To download files in the folders used the Download button. If you are a github user simply clone the repo. 
