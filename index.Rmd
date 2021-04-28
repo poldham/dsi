@@ -1,7 +1,7 @@
 ---
 title: "Indigenous DSI"
 description: |
-  A reading list to accompany the upcoming CBD webinar on the role of Indigenous Peoples and their Traditional Ecological Knowledge in the debate about Digital Sequence Information
+  A set of resources for Indiegenous Peoples on Digital Sequence Information
 site: distill::distill_website
 ---
 
@@ -86,4 +86,4 @@ Robinson, D. F., & Raven, M. (2020). Recognising Indigenous customary law of tot
 Sherman, B., Henry, R., (2021) Access to biodiversity for food production: Reconciling open access digital sequence information with access and benefit sharing, Molecular Plant, <https://doi.org/10.1016/j.molp.2021.03.005> [Lens link](https://www.lens.org/lens/scholar/article/037-891-879-282-162/main) Paywall
 
 
-**If you would like to suggest additional reading materials please contact jasmine@oneworldanalytics.com**
+**If you would like to suggest additional reading materials please contact jasminejrkindness at gmail dot com**
