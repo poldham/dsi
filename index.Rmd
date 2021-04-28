@@ -1,7 +1,7 @@
 ---
 title: "Indigenous DSI"
 description: |
-  A reading list to accompany the upcoming CBD webinar on the role of Indigenous Peoples and their Traditional Ecological Knowledge in the debate about DSI
+  A reading list to accompany the upcoming CBD webinar on the role of Indigenous Peoples and their Traditional Ecological Knowledge in the debate about Digital Sequence Information
 site: distill::distill_website
 ---
 

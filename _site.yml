@@ -2,7 +2,7 @@ name: "indigenous_dsi"
 title: "Indigenous DSI"
 description: |
   Indigenous DSI
-output_dir: "_site"
+output_dir: "docs"
 navbar:
   right:
     - text: "Home"
