@@ -33,7 +33,7 @@ The resources below have been grouped into working headings and are organised by
 
 ## Indigenous Data Sovereignty
 
-Wilkinson, M. D., Dumontier, M., Aalbersberg, Ij. J., Appleton, G., Axton, M., Baak, A., ... Mons, B. (2016). The FAIR Guiding Principles for scientific data management and stewardship. Scientific Data, 3, 1--9. <https://doi.org/10.1038/sdata.2016.18> [Lens link](https://www.lens.org/lens/scholar/article/070-462-022-251-464/main) Open Access
+Wilkinson, M. D., Dumontier, M., Aalbersberg, Ij. J., Appleton, G., Axton, M., Baak, A., ... Mons, B. (2016). The FAIR Guiding Principles for scientific data management and stewardship. Scientific Data, 3, 1--9. <https://doi.org/10.1038/sdata.2016.18> [Lens link](https://www.lens.org/lens/scholar/article/070-462-022-251-464/main) Open Access. Note: Does not mention indigenous peoples but should be read for the CARE principles and biocultural labels papers below. 
 
 Rainie, S. C., Schultz, J. L., Briggs, E., Riggs, P., & Palmanteer-Holder, N. L. (2017). Data as a strategic resource: Self-determination, governance, and the data challenge for indigenous nations in the United States. International Indigenous Policy Journal, 8(2). <https://doi.org/10.18584/iipj.2017.8.2.1> [Lens link](https://www.lens.org/lens/scholar/article/088-106-961-734-82X/main) Open Access
 
