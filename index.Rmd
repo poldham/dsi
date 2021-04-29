@@ -15,7 +15,7 @@ description: |
 site: distill::distill_website
 ---
 
-This web page provides a list of articles that relate to indigenous peoples, traditional knowledge and the topic of digital sequence information. Digital sequence information is a place holder term for what scientists normally call genetic sequence data that arises from the sequencing of genomes in fields such as genomics. If you are completely new to digital sequence information you may want to watch [DSI Simply Explained](https://www.youtube.com/watch?v=xJ0ZjpY0VQo) from [the ABS initiative](http://www.abs-initiative.info/).
+This web page provides a list of articles that relate to indigenous peoples, traditional knowledge and the topic of digital sequence information. Digital sequence information is a place holder term for what scientists normally call genetic sequence data that arises from the sequencing of genomes in fields such as genomics. If you are completely new to digital sequence information you may want to watch [DSI Simply Explained](https://www.youtube.com/watch?v=xJ0ZjpY0VQo) from [The ABS Initiative](http://www.abs-initiative.info/).
 
 Digital sequence information is being discussed under the United Nations Convention on Biological Diversity, the Nagoya Protocol and at a range of international processes including the Plant Treaty of the FAO, the World Health Organisation and the draft treaty on marine biodiversity in areas beyond national jurisdiction (BBNJ) under UNCLOS.
 
