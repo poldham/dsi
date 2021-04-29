@@ -22,7 +22,7 @@ The below resource list is a work in progress to compile literature that seems t
   - [indigenous peoples and digital sequence information](https://www.lens.org/lens/search/scholar/list?collectionId=190121)
   - [indigenous peoples and genomics](https://www.lens.org/lens/search/scholar/list?collectionId=190120)
 
-The resources below have been grouped into working headings and are organised by year for each heading. We also indicate if an article is open access. If you cannot access and article please contact us and we will look into it.  
+The resources below have been grouped into working headings and are organised by year for each heading. We also indicate if an article is open access. If you cannot access an article please contact us and we will look into it.  
 
 ## Indigenous Data Sovereignty
 
@@ -99,6 +99,8 @@ Collier-Robinson, L., Rayne, A., Rupene, M., Thoms, C., & Steeves, T. (2019). Em
 Inwood, S. N., McLaughlin, G. M., Buckley, T. R., Cox, M. P., Handley, K. M., Steeves, T. E., ... Dearden, P. K. (2020). Opportunities for modern genetic technologies to maintain and enhance aotearoa New Zealand's bioheritage. New Zealand Journal of Ecology, 44(2), 1--13. <https://doi.org/10.20417/nzjecol.44.22> [Lens link](https://www.lens.org/lens/scholar/article/024-701-441-809-01X/main) Open Access
 
 Anderson, J., & Hudson, M. (2020). The Biocultural Labels Initiative: Supporting Indigenous rights in data derived from genetic resources. Biodiversity Information Science and Standards, 4. <https://doi.org/10.3897/biss.4.59230> [Lens link](https://www.lens.org/lens/scholar/article/044-786-718-614-233/main) Open Access
+
+For Biocultural labels also see the [local contexts website](https://localcontexts.org/)
 
 Robinson, D. F., & Raven, M. (2020). Recognising Indigenous customary law of totemic plant species: Challenges and pathways. Geographical Journal, 186(1), 31--44. <https://doi.org/10.1111/geoj.12320> [Lens link](https://www.lens.org/lens/scholar/article/046-544-266-448-465/main) Open Access
 
