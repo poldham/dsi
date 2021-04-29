@@ -2,7 +2,14 @@
 title: "Indigenous Peoples and Digital Sequence Information"
 author:
 - name: Paul Oldham
+  orcid_id: 0000-0002-1013-4390
 - name: Jasmine Kindness
+  orcid_id: 0000-0002-2353-3673
+citation_url: https://poldham.github.io/dsi/
+output:
+  distill::distill_article:
+    toc: true
+    toc_float: true
 description: |
   A set of resources for Indigenous Peoples on Digital Sequence Information (DSI)
 site: distill::distill_website
@@ -16,7 +23,7 @@ To date the participation of indigenous peoples in these debates has been somewh
 
 However, there is perhaps a sense that the rights and interests of indigenous peoples are peripheral to discussions that focus on genomes and large scale data in data bases. This suggests that more work needs to be done to explore and bring to the table issues of concern to indigenous peoples and potential solutions. 
 
-The below resource list is a work in progress to compile literature that seems to be relevant to the rights of indigenous peoples and local communities. This list is not meant to be comprehensive and suggestions for addition can be provided by raising an issue or emailing us (below). We also provide access to three dynamic collections at the non-profit Lens database in Australia that will automatically update to make it easier to find literature:
+The below resource list is a work in progress to compile literature that seems to be relevant to the rights of indigenous peoples and local communities. This list is not meant to be comprehensive and suggestions for addition can be provided by [raising an issue](https://github.com/poldham/dsi/issues) on Github or emailing us at jasminejrkindness at gmail dot com. We also provide access to three dynamic collections at the non-profit Lens database in Australia that will automatically update to make it easier to find literature:
 
   - [digital sequence information collection](https://www.lens.org/lens/search/scholar/list?collectionId=190122)
   - [indigenous peoples and digital sequence information](https://www.lens.org/lens/search/scholar/list?collectionId=190121)
@@ -68,21 +75,21 @@ Ambler, J., Diallo, A. A., Dearden, P. K., Wilcox, P., Hudson, M., & Tiffin, N. 
 
 Karger, E. J., & Scholz, A. H. (2021). DSI, the Nagoya Protocol, and Stakeholders' Concerns. Trends in Biotechnology, 39(2), 110--112. <https://doi.org/10.1016/j.tibtech.2020.09.008> [Lens link](https://www.lens.org/lens/scholar/article/136-113-291-195-672/main) Paywall. This is a response to Ambler et al above. 
 
-## Guidelines and Principles
+## Ethics Guidelines and Principles
 
-Institute of Aboriginal, A., & Strait Islander Studies, T. (1968). AIATSIS Code of Ethics for Aboriginal and Torres Strait Islander Research. Retrieved from [<http://aiatsis.gov.au/ethics>](http://aiatsis.gov.au/ethics){.uri}
+Institute of Aboriginal, A., & Strait Islander Studies, T. (1968). AIATSIS Code of Ethics for Aboriginal and Torres Strait Islander Research. Retrieved from [http://aiatsis.gov.au/ethics](http://aiatsis.gov.au/ethics){.uri}
 
-Hudson, M., Beaton, A., Milne, M., Port, W., Russell, K., Smith, B., ... Wilcox, P. (2016). Te Mata Ira: Guidelines for Genomic Research with Māori. Retrieved from [<https://www.genomics-aotearoa.org.nz/sites/default/files/2019-03/Te-Mata-Ira-Genome-Research-Guidelines.pdf>](https://www.genomics-aotearoa.org.nz/sites/default/files/2019-03/Te-Mata-Ira-Genome-Research-Guidelines.pdf){.uri}
+Hudson, M., Beaton, A., Milne, M., Port, W., Russell, K., Smith, B., ... Wilcox, P. (2016). Te Mata Ira: Guidelines for Genomic Research with Māori. Retrieved from [https://www.genomics-aotearoa.org.nz/sites/default/files/2019-03/Te-Mata-Ira-Genome-Research-Guidelines.pdf](https://www.genomics-aotearoa.org.nz/sites/default/files/2019-03/Te-Mata-Ira-Genome-Research-Guidelines.pdf){.uri}
 
-Tri-Council Policy Statement. (2018). Ethical conduct for research involving humans. In Holz als Roh- und Werkstoff: European Journal of Wood and Wood Industries (Vol. 45). [Lens link](https://www.lens.org/lens/scholar/article/082-148-585-538-178/main) <https://ethics.gc.ca/eng/policy-politique_tcps2-eptc2_2018.html> Open Access
+Tri-Council Policy Statement. (2018). Ethical conduct for research involving humans.  [https://ethics.gc.ca/eng/policy-politique_tcps2-eptc2_2018.html](https://ethics.gc.ca/eng/policy-politique_tcps2-eptc2_2018.html) Open Access. See in particular Chapter 9. 
 
 ## The CBD, the Nagoya Protocol and Access and Benefit Sharing
 
-Wynberg, R., Schroeder, D., & Chennells, R. (2009). Indigenous Peoples, Consent and Benefit Sharing: Lessons from the San-Hoodia Case. Retrieved from [<https://link.springer.com/book/10.1007/978-90-481-3123-5>](https://link.springer.com/book/10.1007/978-90-481-3123-5){.uri} Paywall (Book)
+Wynberg, R., Schroeder, D., & Chennells, R. (2009). Indigenous Peoples, Consent and Benefit Sharing: Lessons from the San-Hoodia Case. Retrieved from [https://link.springer.com/book/10.1007/978-90-481-3123-5](https://link.springer.com/book/10.1007/978-90-481-3123-5){.uri} Paywall (Book)
 
-Talaat, W. I. A. W. (2013). Protection of the Associated Traditional Knowledge on Genetic Resources: Beyond the Nagoya Protocol. Procedia - Social and Behavioral Sciences, 91, 673--678. <https://doi.org/10.1016/j.sbspro.2013.08.468> [Lens link](https://www.lens.org/lens/scholar/article/092-953-359-928-463/main) Open Access
+Talaat, W. I. A. W. (2013). Protection of the Associated Traditional Knowledge on Genetic Resources: Beyond the Nagoya Protocol. Procedia - Social and Behavioral Sciences, 91, 673--678. [https://doi.org/10.1016/j.sbspro.2013.08.468](https://doi.org/10.1016/j.sbspro.2013.08.468) [Lens link](https://www.lens.org/lens/scholar/article/092-953-359-928-463/main) Open Access
 
-Laird, S., International, P., & Wynberg, R. (2018). A Fact Finding and Scoping Study on Digital Sequence Information on Genetic Resources in the Context of the Convention on Biological Diversity and Nagoya Protocol (January). <https://www.cbd.int/doc/c/e95a/4ddd/4baea2ec772be28edcd10358/dsi-ahteg-2018-01-03-en.pdf> Open Access
+Laird, S., International, P., & Wynberg, R. (2018). A Fact Finding and Scoping Study on Digital Sequence Information on Genetic Resources in the Context of the Convention on Biological Diversity and Nagoya Protocol (January). [https://www.cbd.int/doc/c/e95a/4ddd/4baea2ec772be28edcd10358/dsi-ahteg-2018-01-03-en.pdf](https://www.cbd.int/doc/c/e95a/4ddd/4baea2ec772be28edcd10358/dsi-ahteg-2018-01-03-en.pdf) Open Access
 
 Lawson, C., & Adhikari, K. (Eds.). (2018). Biodiversity, Genetic Resources and Intellectual Property: Developments in Access and Benefit Sharing (1st ed.). Routledge. <https://doi.org/10.4324/9781315098517> [Lens link](https://www.lens.org/lens/scholar/article/113-261-910-666-788/main) Paywall (Book)
 
