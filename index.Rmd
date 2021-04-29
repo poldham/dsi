@@ -66,6 +66,8 @@ Kupferschmidt, K. (2018). Biologists raise alarm over changes to biopiracy rules
 
 Ambler, J., Diallo, A. A., Dearden, P. K., Wilcox, P., Hudson, M., & Tiffin, N. (2021). Including Digital Sequence Data in the Nagoya Protocol Can Promote Data Sharing. Trends in Biotechnology, 39(2), 116--125. <https://doi.org/10.1016/j.tibtech.2020.06.009> [Lens link](https://www.lens.org/lens/scholar/article/004-196-484-950-435/main) Paywall
 
+Karger, E. J., & Scholz, A. H. (2021). DSI, the Nagoya Protocol, and Stakeholders' Concerns. Trends in Biotechnology, 39(2), 110--112. <https://doi.org/10.1016/j.tibtech.2020.09.008> [Lens link](https://www.lens.org/lens/scholar/article/136-113-291-195-672/main) Paywall. This is a response to Ambler et al above. 
+
 ## Guidelines and Principles
 
 Institute of Aboriginal, A., & Strait Islander Studies, T. (1968). AIATSIS Code of Ethics for Aboriginal and Torres Strait Islander Research. Retrieved from [<http://aiatsis.gov.au/ethics>](http://aiatsis.gov.au/ethics){.uri}
@@ -87,8 +89,6 @@ Lawson, C., & Adhikari, K. (Eds.). (2018). Biodiversity, Genetic Resources and I
 Wynberg, R., & Laird, S. A. (2018). Fast Science and Sluggish Policy: The Herculean Task of Regulating Biodiscovery. Trends in Biotechnology, 36(1), 1--3. <https://doi.org/10.1016/j.tibtech.2017.09.002> [Lens link](https://www.lens.org/lens/scholar/article/070-462-022-251-464/main) Open Access
 
 Watanabe, M. E. (2019). The Nagoya protocol: The conundrum of defining digital sequence information. BioScience, 69(6), 480. <https://doi.org/10.1093/biosci/biz034> [Lens link](https://www.lens.org/lens/scholar/article/022-476-015-755-37X/main) Open Access
-
-Karger, E. J., & Scholz, A. H. (2021). DSI, the Nagoya Protocol, and Stakeholders' Concerns. Trends in Biotechnology, 39(2), 110--112. <https://doi.org/10.1016/j.tibtech.2020.09.008> [Lens link](https://www.lens.org/lens/scholar/article/136-113-291-195-672/main) Paywall
 
 ## Novel Approaches to Indigenous Knowledge and Genomics
 
