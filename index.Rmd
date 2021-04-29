@@ -1,13 +1,29 @@
 ---
-title: "Indigenous DSI"
+title: "Indigenous Peoples and Digital Sequence Information"
 description: |
-  A set of resources for Indiegenous Peoples on Digital Sequence Information
+  A set of resources for Indigenous Peoples on Digital Sequence Information (DSI)
 site: distill::distill_website
 ---
 
+This web page provides a list of articles that relate to indigenous peoples, traditional knowledge and the topic of digital sequence information. Digital sequence information is a place holder term for what scientists normally call genetic sequence data that arises from the sequencing of genomes in fields such as genomics. 
+
+Digital sequence information is being discussed under the United Nations Convention on Biological Diversity, the Nagoya Protocol and at a range of international processes including the Plant Treaty of the FAO, the World Health Organisation and the draft treaty on marine biodiversity in areas beyond national jurisdiction (BBNJ) under UNCLOS.
+
+To date the participation of indigenous peoples in these debates has been somewhat limited. Representatives from the International Indigenous Forum on Biodiversity (IIFB) have been able to participate in the various discussions held at the Conference of the Parties and COP decisions have invited contributions from indigenous peoples and local communities. For details on the work to date [click here](https://www.cbd.int/dsi-gr/whatdone.shtml). DSI will be a major topic for COP15 of the CBD and the COP-MOP of the Nagoya Protocol that is tentatively scheduled for October 2021.
+
+However, there is perhaps a sense that the rights and interests of indigenous peoples are peripheral to discussions that focus on genomes and large scale data in data bases. This suggests that more work needs to be done to explore and bring to the table issues of concern to indigenous peoples and potential solutions. 
+
+The below resource list is a work in progress to compile literature that seems to be relevant to the rights of indigenous peoples and local communities. This list is not meant to be comprehensive and suggestions for addition can be provided by raising an issue or emailing us (below). We also provide access to three dynamic collections at the non-profit Lens database in Australia that will automatically update to make it easier to find literature:
+
+  - [digital sequence information collection](https://www.lens.org/lens/search/scholar/list?collectionId=190122)
+  - [indigenous peoples and digital sequence information](https://www.lens.org/lens/search/scholar/list?collectionId=190121)
+  - [indigenous peoples and genomics](https://www.lens.org/lens/search/scholar/list?collectionId=190120)
+
+The resources below have been grouped into working headings and are organised by year for each heading. We also indicate if an article is open access. If you cannot access and article please contact us and we will look into it.  
+
 ## Indigenous Data Sovereignty
 
-Wilkinson, M. D., Dumontier, M., Aalbersberg, Ij. J., Appleton, G., Axton, M., Baak, A., ... Mons, B. (2016). Comment: The FAIR Guiding Principles for scientific data management and stewardship. Scientific Data, 3, 1--9. <https://doi.org/10.1038/sdata.2016.18> [Lens link](https://www.lens.org/lens/scholar/article/070-462-022-251-464/main) Open Access
+Wilkinson, M. D., Dumontier, M., Aalbersberg, Ij. J., Appleton, G., Axton, M., Baak, A., ... Mons, B. (2016). The FAIR Guiding Principles for scientific data management and stewardship. Scientific Data, 3, 1--9. <https://doi.org/10.1038/sdata.2016.18> [Lens link](https://www.lens.org/lens/scholar/article/070-462-022-251-464/main) Open Access
 
 Rainie, S. C., Schultz, J. L., Briggs, E., Riggs, P., & Palmanteer-Holder, N. L. (2017). Data as a strategic resource: Self-determination, governance, and the data challenge for indigenous nations in the United States. International Indigenous Policy Journal, 8(2). <https://doi.org/10.18584/iipj.2017.8.2.1> [Lens link](https://www.lens.org/lens/scholar/article/088-106-961-734-82X/main) Open Access
 
