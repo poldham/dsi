@@ -1,5 +1,8 @@
 ---
 title: "Indigenous Peoples and Digital Sequence Information"
+author:
+- name: Paul Oldham
+- name: Jasmine Kindness
 description: |
   A set of resources for Indigenous Peoples on Digital Sequence Information (DSI)
 site: distill::distill_website
