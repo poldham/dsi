@@ -77,7 +77,7 @@ Karger, E. J., & Scholz, A. H. (2021). DSI, the Nagoya Protocol, and Stakeholder
 
 ## Ethics Guidelines and Principles
 
-Institute of Aboriginal, A., & Strait Islander Studies, T. (1968). AIATSIS Code of Ethics for Aboriginal and Torres Strait Islander Research. Retrieved from [http://aiatsis.gov.au/ethics](http://aiatsis.gov.au/ethics){.uri}
+Australian Institute of Aboriginal and Torres Strait Islander Studies, T. (2020). AIATSIS Code of Ethics for Aboriginal and Torres Strait Islander Research. Retrieved from [https://aiatsis.gov.au/research/ethical-research](https://aiatsis.gov.au/research/ethical-research){.uri}
 
 Hudson, M., Beaton, A., Milne, M., Port, W., Russell, K., Smith, B., ... Wilcox, P. (2016). Te Mata Ira: Guidelines for Genomic Research with Māori. Retrieved from [https://www.genomics-aotearoa.org.nz/sites/default/files/2019-03/Te-Mata-Ira-Genome-Research-Guidelines.pdf](https://www.genomics-aotearoa.org.nz/sites/default/files/2019-03/Te-Mata-Ira-Genome-Research-Guidelines.pdf){.uri}
 
