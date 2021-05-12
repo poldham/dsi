@@ -31,7 +31,7 @@ The below resource list is a work in progress to compile literature that seems t
   - [indigenous peoples and digital sequence information](https://www.lens.org/lens/search/scholar/list?collectionId=190121)
   - [indigenous peoples and genomics](https://www.lens.org/lens/search/scholar/list?collectionId=190120)
 
-The resources below have been grouped into working headings and are organised by year for each heading. We also indicate if an article is open access. If you cannot access an article please contact us and we will look into it.  
+The resources below have been grouped into working headings and are organised by year for each heading. We also indicate if an article is open access. If you cannot access an article please contact us and we will look into it. Open access articles are also available via [this dropbox repository](https://www.dropbox.com/sh/yoebk186pa2fyqh/AADWV1o5_cOlOuVGyehRWyAAa?dl=0).
 
 ## Indigenous Data Sovereignty
 
