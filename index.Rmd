@@ -5,6 +5,8 @@ author:
   orcid_id: 0000-0002-1013-4390
 - name: Jasmine Kindness
   orcid_id: 0000-0002-2353-3673
+- name: with contributions from Preston Hardison
+
 citation_url: https://poldham.github.io/dsi/
 output:
   distill::distill_article:
