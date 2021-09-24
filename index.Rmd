@@ -83,15 +83,60 @@ Smyth, S. J., Macall, D. M., Phillips, P. W. B., & de Beer, J. (2020). Implicati
 
 Ambler, J., Diallo, A. A., Dearden, P. K., Wilcox, P., Hudson, M., & Tiffin, N. (2021). Including Digital Sequence Data in the Nagoya Protocol Can Promote Data Sharing. Trends in Biotechnology, 39(2), 116--125. <https://doi.org/10.1016/j.tibtech.2020.06.009> [Lens link](https://www.lens.org/lens/scholar/article/004-196-484-950-435/main) Paywall
 
+Intergovernmental Technical Working Group on Aquatic Genetic Resources for Food and Agriculture (2021). “Digital Sequence Information” on Genetic Resources for Food and Agriculture: Innovation Opportunities, Challenges and Implications.
+<http://www.fao.org/3/nf577en/nf577en.pdf> Open Access
+
 Karger, E. J., & Scholz, A. H. (2021). DSI, the Nagoya Protocol, and Stakeholders' Concerns. Trends in Biotechnology, 39(2), 110--112. <https://doi.org/10.1016/j.tibtech.2020.09.008> [Lens link](https://www.lens.org/lens/scholar/article/136-113-291-195-672/main) Paywall. This is a response to Ambler et al above. 
+
+Brink, M. van Hintum, T. (2021). Practical consequences of digital sequence information (DSI) definitions and access and benefit-sharing scenarios from a plant genebank’s perspective. Plants People Planet ppp3.10201.
+<https://doi.org/10.1002/ppp3.10201> Open Access
+
+African Group of Negotiators on Biodiversity-Ad Hoc Group on Digital Sequence Information (2019). Digital Sequence Information on Genetic Resources: Submission of Views and Information on Terminology, Scope, and Domestic Measures on Access and Benefit Sharing. <https://www.cbd.int/abs/DSI-views/2019/AfricanGroup-DSI.pdf> Open Access
+
+Karger, E. du Plessis, P. Meyer, H. (2019). Digital Sequence Information on Genetic
+Resources (DSI): An Introductory Guide for African Policymakers and Stakeholders. The ABS Capacity
+Development Initiative <https://unctad.org/system/files/official-document/ditc-ted-05052020-BioTradeSSC-DSI.pdf> Open Access
+
+Lawson, C. Rourke, M. (2020). Digital sequence information as a marine genetic resource
+under the proposed UNCLOS legally binding instrument. Marine Policy 122: 103878.
+<https://www.sciencedirect.com/science/article/abs/pii/S0308597X19308061> Paywall
+
+Oldham, P. (2020). Digital Sequence Information - Technical Aspects. European Commission on
+technical aspects of digital sequence information.
+<https://ec.europa.eu/environment/nature/biodiversity/international/abs/pdf/Final_Report_technical_a
+spects_of_DSI.pdf> Open Access
+
+UK Parliament (2020). Digital sequence information. UK Parliament Postnote 630. UK Parliament,
+London. 7pp. <https://researchbriefings.files.parliament.uk/documents/POST-PN-0630/POST-PN-0630.pdf> Open Access
+
+## Traditional Knowledge and Digital Sequence Information
+
+Delegation of Switzerland (2021). An International Disclosure Of Source Requirement for Genetic Resources and Associated Traditional Knowledge in Patent Applications - A Contribution to the Evidence-Based Approach. WIPO/GRTKF/IC/41/12. Intergovernmental Committee on Intellectual Property and Genetic Resources, Traditional Knowledge and Folklore, Forty-First Session, Geneva, August 30 to September 3, 2021. <https://www.wipo.int/edocs/mdocs/tk/en/wipo_grtkf_ic_41/wipo_grtkf_ic_41_12.pdf> Open Access
+
+Ke, Y. Chen, J. (2020). Interrelationship between genetic resources and traditional
+knowledge - An example from earthworm fibrinolytic enzyme Biotechnology Law Report39: 440-451.
+<https://www.liebertpub.com/doi/pdf/10.1089/blr.2020.29190.yk> Open Access
+
+Parra, F. Casas, A. Begazo, D. Paco, A. Márquez, E. Cruz, A. Segovia, J. Torres-García, I. Zarazúa, M. Lizárraga, L. Torres-Guevara, J. (2021). Natural and cultural processes influencing gene flow among wild (atoq papa), weedy (araq papa and k’ipa papa), and crop potatoes in the Andean Region of Southern Peru. Frontiers in Ecology and Evolution <https://www.frontiersin.org/articles/10.3389/fevo.2021.617969/full> Open Access
+
+Rourke, M. (2018). Who are indigenous and local communities and what is traditional knowledge for virus access and benefit-sharing? A textual analysis of the Convention on Biological Diversity and Its Nagoya Protocol. Journal of Law and Medicine 25(3):707-726. <https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3161573> Open Access
+
+Syam, N. Romero, T. (2021). Misappropriation of Genetic Resources and Associated Traditional Knowledge: Challenges Posed by Intellectual Property and Genetic Sequence Information. Research Paper 130. The South Centre, Geneva. <https://www.southcentre.int/wp-content/uploads/2021/04/RP-130.pdf> Open Access
+
+WIPO (2020). Key Questions on Patent Disclosure Requirements for Genetic Resources and Traditional
+Knowledge. 2nd ed. World Intellectual Property Organization (WIPO), Geneva.
+<https://www.wipo.int/edocs/pubdocs/en/wipo_pub_1047_19.pdf> Open Access
+
+Wynberg, R. Andersen, R. Laird, S. Kusena, K. Prip, C. Westengen, O. (2021). Farmers’ rights and digital sequence information: Crisis or opportunity to reclaim stewardship over agrobiodiversity? Frontiers in Plant Science
+<https://doi.org/10.3389/fpls.2021.686728> Open Access
 
 ## Ethics, Guidelines and Principles
 
-Australian Institute of Aboriginal and Torres Strait Islander Studies, T. (2020). AIATSIS Code of Ethics for Aboriginal and Torres Strait Islander Research. Retrieved from [https://aiatsis.gov.au/research/ethical-research](https://aiatsis.gov.au/research/ethical-research){.uri}
+Australian Institute of Aboriginal and Torres Strait Islander Studies, T. (2020). AIATSIS Code of Ethics for Aboriginal and Torres Strait Islander Research. Retrieved from [https://aiatsis.gov.au/research/ethical-research](https://aiatsis.gov.au/research/ethical-research){.uri} Open Access
 
-Hudson, M., Beaton, A., Milne, M., Port, W., Russell, K., Smith, B., ... Wilcox, P. (2016). Te Mata Ira: Guidelines for Genomic Research with Māori. Retrieved from [https://www.genomics-aotearoa.org.nz/sites/default/files/2019-03/Te-Mata-Ira-Genome-Research-Guidelines.pdf](https://www.genomics-aotearoa.org.nz/sites/default/files/2019-03/Te-Mata-Ira-Genome-Research-Guidelines.pdf){.uri}
+Hudson, M., Beaton, A., Milne, M., Port, W., Russell, K., Smith, B., ... Wilcox, P. (2016). Te Mata Ira: Guidelines for Genomic Research with Māori. Retrieved from [https://www.genomics-aotearoa.org.nz/sites/default/files/2019-03/Te-Mata-Ira-Genome-Research-Guidelines.pdf](https://www.genomics-aotearoa.org.nz/sites/default/files/2019-03/Te-Mata-Ira-Genome-Research-Guidelines.pdf){.uri} Open Access
 
-Government of Canada (2018) Tri-Council Policy Statement: Ethical conduct for research involving humans.  [https://ethics.gc.ca/eng/policy-politique_tcps2-eptc2_2018.html](https://ethics.gc.ca/eng/policy-politique_tcps2-eptc2_2018.html) Open Access. See in particular [Chapter 9: Research Involving the First Nations, Inuit and Métis Peoples of Canada](https://ethics.gc.ca/eng/tcps2-eptc2_2018_chapter9-chapitre9.html)
+Government of Canada (2018) Tri-Council Policy Statement: Ethical conduct for research involving humans.  [https://ethics.gc.ca/eng/policy-politique_tcps2-eptc2_2018.html](https://ethics.gc.ca/eng/policy-politique_tcps2-eptc2_2018.html) Open Access. See in particular [Chapter 9: Research Involving the First Nations, Inuit and Métis Peoples of Canada](https://ethics.gc.ca/eng/tcps2-eptc2_2018_chapter9-chapitre9.html) Open Access
 
 ## The Nagoya Protocol and ABS
 
@@ -110,6 +155,17 @@ Wynberg, R., & Laird, S. A. (2018). Fast Science and Sluggish Policy: The Hercul
 
 Watanabe, M. E. (2019). The Nagoya protocol: The conundrum of defining digital sequence information. BioScience, 69(6), 480. <https://doi.org/10.1093/biosci/biz034> [Lens link](https://www.lens.org/lens/scholar/article/022-476-015-755-37X/main) Open Access
 
+***Kharb, D. (2020). Regulation of ABS obligations in digital sequence information over genetic
+resources: The legal conundrum under CBD and Nagoya Protocol Framework. Gene Technology 10(3)
+https://www.longdom.org/open-access/regulation-of-abs-obligations-in-digital-sequence-informationover-
+genetic-resources-the-legal-conundrum-under-cbd-and-nagoya-prot-80883.html Open Access
+
+Kamau, E, C. (2019)(ed.). Implementation of the Nagoya Protocol: Fulfilling new obligations
+among emerging issues. BfN-Skripten 564. Bundesamt für Naturschutz (BfN), Bonn. 142pp.
+<https://community.abs-sustainabledevelopment.net/wp-content/uploads/2020/06/Skript564.pdf> Open Access
+
+Laird, S. Wynberg, R. Rourke, M. Humphries, F. Muller, M. Lawson, C. (2020). Rethink the expansion of access and benefit sharing. Science. 367(1200), 10.1126/science.aba9609. <https://www.researchgate.net/publication/339887387_Rethink_the_expansion_of_access_and_benefit_sharing>
+
 ## Critiques of ABS
 
 Bond, M. R., & Scott, D. (2020). Digital biopiracy and the (dis)assembling of the Nagoya Protocol. Geoforum, 117(June), 24–32. <https://doi.org/10.1016/j.geoforum.2020.09.001> [Lens link](https://www.lens.org/lens/scholar/article/011-319-600-903-101/main) Open Access
@@ -117,6 +173,12 @@ Bond, M. R., & Scott, D. (2020). Digital biopiracy and the (dis)assembling of th
 Neumann, D., Borisenko, A. V., Coddington, J. A., Häuser, C. L., Butler, C. R., Casino, A., … Giere, P. (2018). Global biodiversity research tied up by juridical interpretations of access and benefit sharing. Organisms Diversity and Evolution, 18(1). <https://doi.org/10.1007/s13127-017-0347-1> [Lens link](https://www.lens.org/lens/scholar/article/033-019-173-353-259/main) Paywall (Available via [ResearchGate](https://www.researchgate.net/publication/321313754_Global_biodiversity_research_tied_up_by_juridical_interpretations_of_access_and_benefit_sharing)) 
 
 Smyth, S. J., & Charles, T. C. (2021). Impacts on International Research Collaborations from DSI/ABS Uncertainty. Trends in Biotechnology, 39(5), 430–433. <https://doi.org/10.1016/j.tibtech.2020.10.011> [Lens link](https://www.lens.org/lens/scholar/article/008-445-530-174-298/main) Open Access
+
+Bagley, M. Perron-Welch, F (2021). Study to Identify Specific Cases of Genetic Resources
+and Traditional Knowledge Associated with Genetic Resources that Occur in Transboundary Situations
+or for Which it is Not Possible to Grant or Obtain Prior Informed Consent. CBD/SBI/3/15/Add.1.
+Secretariat of the Convention on Biological Diversity (SCBD), Montreal.
+<https://www.cbd.int/doc/c/c850/cee6/e368619e14ae3e3fb4d84de9/sbi-03-15-add1-en.pdf>
 
 ## Novel Approaches to Indigenous Knowledge, Genomics and ABS
 
@@ -139,6 +201,34 @@ For Biocultural labels also see the [local contexts website](https://localcontex
 Robinson, D. F., & Raven, M. (2020). Recognising Indigenous customary law of totemic plant species: Challenges and pathways. Geographical Journal, 186(1), 31--44. <https://doi.org/10.1111/geoj.12320> [Lens link](https://www.lens.org/lens/scholar/article/046-544-266-448-465/main) Paywall
 
 Sherman, B., Henry, R., (2021) Access to biodiversity for food production: Reconciling open access digital sequence information with access and benefit sharing, Molecular Plant, <https://doi.org/10.1016/j.molp.2021.03.005> [Lens link](https://www.lens.org/lens/scholar/article/037-891-879-282-162/main) Paywall
+
+## Further Resources
+
+ABS Biotrade - Digital Sequence Information on Genetic Resources
+https://www.abs-biotrade.info/topics/specific-issues/dsi/
+
+ABS Information Forum - Digital Sequence Information (DSI)
+https://nagoyaprotocol.myspecies.info/node/27
+
+Oldham, Paul; Kindness, Jasmine; Hardison, Preston (2020-). Indigenous Peoples and Digital Sequence
+Information
+https://poldham.github.io/dsi/
+
+Digital Sequence Information resources with an emphasis on TK and indigenous peoples.
+Parsons, Jill (2020). Benefit-Sharing, Nagoya, and DSI - Oh My! Ecological Society of America (ESA)
+Field Notes Blog.
+https://www.esa.org/esablog/2020/05/11/benefit-sharing-nagoya-and-dsi-oh-my/
+
+Global Youth Biodiversity Network (2021). A Primer on Digital Sequence Information - Session 1
+https://www.youtube.com/watch?v=rh1i7QiTgyg
+
+Hudson, Maui (2021). Recognising Indigenous Rights in Digital Sequence Information
+https://www.youtube.com/watch?v=xF8RJzWyVHE
+
+ABS Initiative Webinar on the Role of IPLCs and associated TK in the DSI debate: https://youtu.be/1ozPDfHQBy8 (English version)
+Also in French at: https://www.youtube.com/watch?v=HX_vp8kPRNc&t=3s
+
+Summary report of the webinar: https://www.abs-biotrade.info/fileadmin/Downloads/3.%20TOPICS/SPECIFIC%20ISSUES/DSI/BELOW/Webinar-Report-Role-of-IPLCs-and-aTK-in-DSI-debate-06-2021.pdf
 
 
 **If you would like to suggest additional reading materials please contact jasminejrkindness at gmail dot com**
