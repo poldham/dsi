@@ -23,6 +23,7 @@
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
@@ -55,7 +56,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -76,13 +77,14 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
 code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
+
 
   <!--radix_placeholder_meta_tags-->
   <title>Indigenous DSI: Indigenous Peoples and Digital Sequence Information</title>
@@ -457,7 +459,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   </style>
 
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
   <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1864,7 +1866,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -2035,7 +2040,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2079,7 +2084,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1>Indigenous Peoples and Digital Sequence Information</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>A set of resources for Indigenous Peoples on Digital Sequence Information (DSI)</p></p>
+<p><p>A set of resources for Indigenous Peoples on Digital Sequence
+Information (DSI)</p></p>
 </div>
 
 <div class="d-byline">
@@ -2098,83 +2104,620 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h3>Contents</h3>
 <ul>
 <li><a href="#introduction">Introduction</a></li>
-<li><a href="#indigenous-data-sovereignty">Indigenous Data Sovereignty</a></li>
-<li><a href="#indigenous-peoples-and-human-genomics">Indigenous Peoples and Human Genomics</a></li>
+<li><a href="#indigenous-data-sovereignty">Indigenous Data
+Sovereignty</a></li>
+<li><a href="#indigenous-peoples-and-human-genomics">Indigenous Peoples
+and Human Genomics</a></li>
 <li><a href="#ethnopharmacology">Ethnopharmacology</a></li>
-<li><a href="#digital-sequence-information">Digital Sequence Information</a></li>
-<li><a href="#ethics-guidelines-and-principles">Ethics, Guidelines and Principles</a></li>
-<li><a href="#the-nagoya-protocol-and-abs">The Nagoya Protocol and ABS</a></li>
+<li><a href="#digital-sequence-information">Digital Sequence
+Information</a></li>
+<li><a
+href="#traditional-knowledge-and-digital-sequence-information">Traditional
+Knowledge and Digital Sequence Information</a></li>
+<li><a href="#ethics-guidelines-and-principles">Ethics, Guidelines and
+Principles</a></li>
+<li><a href="#the-nagoya-protocol-and-abs">The Nagoya Protocol and
+ABS</a></li>
 <li><a href="#critiques-of-abs">Critiques of ABS</a></li>
-<li><a href="#novel-approaches-to-indigenous-knowledge-genomics-and-abs">Novel Approaches to Indigenous Knowledge, Genomics and ABS</a></li>
+<li><a
+href="#novel-approaches-to-indigenous-knowledge-genomics-and-abs">Novel
+Approaches to Indigenous Knowledge, Genomics and ABS</a></li>
+<li><a
+href="#indigenous-peoples-and-anthropogenic-environments">Indigenous
+Peoples and Anthropogenic environments</a></li>
+<li><a href="#further-resources">Further Resources</a></li>
 </ul>
 </nav>
 </div>
 <h2 id="introduction">Introduction</h2>
-<p>This web page provides a list of articles that relate to indigenous peoples, traditional knowledge and the topic of digital sequence information. Digital sequence information is a place holder term for what scientists normally call genetic sequence data that arises from the sequencing of genomes in fields such as genomics. If you are completely new to digital sequence information you may want to watch <a href="https://www.youtube.com/watch?v=xJ0ZjpY0VQo">DSI Simply Explained</a> from <a href="http://www.abs-initiative.info/">The ABS Initiative</a>.</p>
-<p>Digital sequence information is being discussed under the United Nations Convention on Biological Diversity, the Nagoya Protocol and at a range of international processes including the Plant Treaty of the FAO, the World Health Organisation and the draft treaty on marine biodiversity in areas beyond national jurisdiction (BBNJ) under UNCLOS.</p>
-<p>To date the participation of indigenous peoples in these debates has been somewhat limited. Representatives from the International Indigenous Forum on Biodiversity (IIFB) have been able to participate in the various discussions held at the Conference of the Parties and COP decisions have invited contributions from indigenous peoples and local communities. For details on the work to date <a href="https://www.cbd.int/dsi-gr/whatdone.shtml">click here</a>. DSI will be a major topic for COP15 of the CBD and the COP-MOP of the Nagoya Protocol that is tentatively scheduled for October 2021.</p>
-<p>However, there is perhaps a sense that the rights and interests of indigenous peoples are peripheral to discussions that focus on genomes and large scale data in data bases. This suggests that more work needs to be done to explore and bring to the table issues of concern to indigenous peoples and potential solutions.</p>
-<p>The below resource list is a work in progress to compile literature that seems to be relevant to the rights of indigenous peoples and local communities. This list is not meant to be comprehensive and suggestions for addition can be provided by <a href="https://github.com/poldham/dsi/issues">raising an issue</a> on Github or emailing us at jasminejrkindness at gmail dot com. We also provide access to three dynamic collections at the non-profit Lens database in Australia that will automatically update to make it easier to find literature:</p>
+<p>This web page provides a list of articles that relate to indigenous
+peoples, traditional knowledge and the topic of digital sequence
+information. Digital sequence information is a place holder term for
+what scientists normally call genetic sequence data that arises from the
+sequencing of genomes in fields such as genomics. If you are completely
+new to digital sequence information you may want to watch <a
+href="https://www.youtube.com/watch?v=xJ0ZjpY0VQo">DSI Simply
+Explained</a> from <a href="http://www.abs-initiative.info/">The ABS
+Initiative</a>.</p>
+<p>Digital sequence information is being discussed under the United
+Nations Convention on Biological Diversity, the Nagoya Protocol and at a
+range of international processes including the Plant Treaty of the FAO,
+the World Health Organisation and the draft treaty on marine
+biodiversity in areas beyond national jurisdiction (BBNJ) under
+UNCLOS.</p>
+<p>To date the participation of indigenous peoples in these debates has
+been somewhat limited. Representatives from the International Indigenous
+Forum on Biodiversity (IIFB) have been able to participate in the
+various discussions held at the Conference of the Parties and COP
+decisions have invited contributions from indigenous peoples and local
+communities. For details on the work to date <a
+href="https://www.cbd.int/dsi-gr/whatdone.shtml">click here</a>. DSI
+will be a major topic for COP15 of the CBD and the COP-MOP of the Nagoya
+Protocol that is tentatively scheduled for October 2021.</p>
+<p>However, there is perhaps a sense that the rights and interests of
+indigenous peoples are peripheral to discussions that focus on genomes
+and large scale data in data bases. This suggests that more work needs
+to be done to explore and bring to the table issues of concern to
+indigenous peoples and potential solutions.</p>
+<p>The below resource list is a work in progress to compile literature
+that seems to be relevant to the rights of indigenous peoples and local
+communities. This list is not meant to be comprehensive and suggestions
+for addition can be provided by <a
+href="https://github.com/poldham/dsi/issues">raising an issue</a> on
+Github or emailing us at jasminejrkindness at gmail dot com. We also
+provide access to three dynamic collections at the non-profit Lens
+database in Australia that will automatically update to make it easier
+to find literature:</p>
 <ul>
-<li><a href="https://www.lens.org/lens/search/scholar/list?collectionId=190122">digital sequence information collection</a></li>
-<li><a href="https://www.lens.org/lens/search/scholar/list?collectionId=190121">indigenous peoples and digital sequence information</a></li>
-<li><a href="https://www.lens.org/lens/search/scholar/list?collectionId=190120">indigenous peoples and genomics</a></li>
+<li><a
+href="https://www.lens.org/lens/search/scholar/list?collectionId=190122">digital
+sequence information collection</a></li>
+<li><a
+href="https://www.lens.org/lens/search/scholar/list?collectionId=190121">indigenous
+peoples and digital sequence information</a></li>
+<li><a
+href="https://www.lens.org/lens/search/scholar/list?collectionId=190120">indigenous
+peoples and genomics</a></li>
 </ul>
-<p>The resources below have been grouped into working headings and are organised by year for each heading. We also indicate if an article is open access. If you cannot access an article please contact us and we will look into it. Open access articles are also available via <a href="https://www.dropbox.com/sh/yoebk186pa2fyqh/AADWV1o5_cOlOuVGyehRWyAAa?dl=0">this dropbox repository</a>.</p>
+<p>The resources below have been grouped into working headings and are
+organised by year for each heading. We also indicate if an article is
+open access. If you cannot access an article please contact us and we
+will look into it. Open access articles are also available via <a
+href="https://www.dropbox.com/sh/yoebk186pa2fyqh/AADWV1o5_cOlOuVGyehRWyAAa?dl=0">this
+dropbox repository</a>.</p>
 <h2 id="indigenous-data-sovereignty">Indigenous Data Sovereignty</h2>
-<p>Wilkinson, M. D., Dumontier, M., Aalbersberg, Ij. J., Appleton, G., Axton, M., Baak, A., … Mons, B. (2016). The FAIR Guiding Principles for scientific data management and stewardship. Scientific Data, 3, 1–9. <a href="https://doi.org/10.1038/sdata.2016.18" class="uri">https://doi.org/10.1038/sdata.2016.18</a> <a href="https://www.lens.org/lens/scholar/article/070-462-022-251-464/main">Lens link</a> Open Access. Note: Does not mention indigenous peoples but should be read for the CARE principles and biocultural labels papers below.</p>
-<p>Rainie, S. C., Schultz, J. L., Briggs, E., Riggs, P., &amp; Palmanteer-Holder, N. L. (2017). Data as a strategic resource: Self-determination, governance, and the data challenge for indigenous nations in the United States. International Indigenous Policy Journal, 8(2). <a href="https://doi.org/10.18584/iipj.2017.8.2.1" class="uri">https://doi.org/10.18584/iipj.2017.8.2.1</a> <a href="https://www.lens.org/lens/scholar/article/088-106-961-734-82X/main">Lens link</a> Open Access</p>
-<p>The Global Indigenous Data Alliance (2019). The CARE Principles “CARE Principles for Indigenous Data Governance.” The Global Indigenous Data Alliance. GIDA-global.org <a href="https://www.gida-global.org/care" class="uri">https://www.gida-global.org/care</a> Open Access</p>
-<p>Carroll, S. R., Garba, I., Figueroa-Rodríguez, O. L., Holbrook, J., Lovett, R., Materechera, S., … Hudson, M. (2020). The CARE principles for indigenous data governance. Data Science Journal, 19(1), 1–12. <a href="https://doi.org/10.5334/DSJ-2020-043" class="uri">https://doi.org/10.5334/DSJ-2020-043</a> <a href="https://www.lens.org/lens/scholar/article/125-016-268-188-999/main">Lens link</a> Open Access</p>
-<p>Carroll, S. R., Herczog, E., Hudson, M., Russell, K., &amp; Stall, S. (2021). Operationalizing the CARE and FAIR Principles for Indigenous data futures. <em>Scientific Data</em>, <em>8</em>(1), 8–13. <a href="https://doi.org/10.1038/s41597-021-00892-0" class="uri">https://doi.org/10.1038/s41597-021-00892-0</a> <a href="https://www.nature.com/articles/s41597-021-00892-0" class="uri">https://www.nature.com/articles/s41597-021-00892-0</a> Open Access</p>
-<h2 id="indigenous-peoples-and-human-genomics">Indigenous Peoples and Human Genomics</h2>
-<p>Arbour, L., &amp; Cook, D. (2006). DNA on loan: Issues to consider when carrying out genetic research with aboriginal families and communities. Community Genetics, 9(3), 153–160. <a href="https://doi.org/10.1159/000092651" class="uri">https://doi.org/10.1159/000092651</a> <a href="https://www.lens.org/lens/scholar/article/077-868-122-028-539/main">Lens link</a> Paywall</p>
-<p>Tsosie, R. (2007). Cultural challenges to biotechnology: Native American genetic resources and the concept of cultural harm. Journal of Law, Medicine and Ethics, 35(3), 396–411. <a href="https://doi.org/10.1111/j.1748-720X.2007.00163.x" class="uri">https://doi.org/10.1111/j.1748-720X.2007.00163.x</a> <a href="https://www.lens.org/lens/scholar/article/059-749-266-027-071/main">Lens link</a> Paywall</p>
-<p>Reardon, J., &amp; TallBear, K. (2012). “Your DNA is Our History”, genomics, anthropology, and the construction of whiteness as property. Current Anthropology, 53(SUPPL. 5), 233–245. <a href="https://doi.org/10.1086/662629" class="uri">https://doi.org/10.1086/662629</a> <a href="https://www.lens.org/lens/scholar/article/141-439-615-916-917/main">Lens link</a> Open Access</p>
-<p>Caron, N. R., Chongo, M., Hudson, M., Arbour, L., Wasserman, W. W., Robertson, S., … Wilcox, P. (2020). Indigenous Genomic Databases: Pragmatic Considerations and Cultural Contexts. Frontiers in Public Health, 8(April), 1–7. <a href="https://doi.org/10.3389/fpubh.2020.00111" class="uri">https://doi.org/10.3389/fpubh.2020.00111</a> <a href="https://www.lens.org/lens/scholar/article/047-389-039-058-60X/main">Lens link</a> Open Access</p>
-<p>Hudson, M., Garrison, N.A., Sterling, R. et al. Rights, interests and expectations: Indigenous perspectives on unrestricted access to genomic data. Nature Review Genetics 21, 377–384 (2020). <a href="https://doi.org/10.1038/s41576-020-0228-x" class="uri">https://doi.org/10.1038/s41576-020-0228-x</a> <a href="https://www.lens.org/lens/scholar/article/095-099-808-413-027/main">Lens link</a> Paywall</p>
-<p>Powell, K. (2021). The broken promise that undermines human genome research. Nature, 590, 198–201. <a href="https://doi.org/10.1038/d41586-021-00331-5" class="uri">https://doi.org/10.1038/d41586-021-00331-5</a> <a href="https://www.lens.org/lens/scholar/article/151-319-224-071-431/main">Lens link</a> Open Access</p>
-<p>Tsosie, K. S., Fox, K., &amp; Yracheta, J. M. (2021). Genomics data: the broken promise is to Indigenous people. Nature, 591(7851), 529. <a href="https://doi.org/10.1038/d41586-021-00758-w" class="uri">https://doi.org/10.1038/d41586-021-00758-w</a> <a href="https://www.lens.org/lens/scholar/article/048-022-574-660-833/main">Lens link</a> Open Access</p>
-<p>Tsosie, K. S., Yracheta, J. M., Kolopenuk, J. A., &amp; Geary, J. (2021). We Have “Gifted” Enough: Indigenous Genomic Data Sovereignty in Precision Medicine. The American Journal of Bioethics, 21(4), 72–75. <a href="https://doi.org/10.1080/15265161.2021.1891347" class="uri">https://doi.org/10.1080/15265161.2021.1891347</a> Open Access</p>
+<p>Wilkinson, M. D., Dumontier, M., Aalbersberg, Ij. J., Appleton, G.,
+Axton, M., Baak, A., … Mons, B. (2016). The FAIR Guiding Principles for
+scientific data management and stewardship. Scientific Data, 3, 1–9. <a
+href="https://doi.org/10.1038/sdata.2016.18"
+class="uri">https://doi.org/10.1038/sdata.2016.18</a> <a
+href="https://www.lens.org/lens/scholar/article/070-462-022-251-464/main">Lens
+link</a> Open Access. Note: Does not mention indigenous peoples but
+should be read for the CARE principles and biocultural labels papers
+below.</p>
+<p>Rainie, S. C., Schultz, J. L., Briggs, E., Riggs, P., &amp;
+Palmanteer-Holder, N. L. (2017). Data as a strategic resource:
+Self-determination, governance, and the data challenge for indigenous
+nations in the United States. International Indigenous Policy Journal,
+8(2). <a href="https://doi.org/10.18584/iipj.2017.8.2.1"
+class="uri">https://doi.org/10.18584/iipj.2017.8.2.1</a> <a
+href="https://www.lens.org/lens/scholar/article/088-106-961-734-82X/main">Lens
+link</a> Open Access</p>
+<p>The Global Indigenous Data Alliance (2019). The CARE Principles “CARE
+Principles for Indigenous Data Governance.” The Global Indigenous Data
+Alliance. GIDA-global.org <a href="https://www.gida-global.org/care"
+class="uri">https://www.gida-global.org/care</a> Open Access</p>
+<p>Carroll, S. R., Garba, I., Figueroa-Rodríguez, O. L., Holbrook, J.,
+Lovett, R., Materechera, S., … Hudson, M. (2020). The CARE principles
+for indigenous data governance. Data Science Journal, 19(1), 1–12. <a
+href="https://doi.org/10.5334/DSJ-2020-043"
+class="uri">https://doi.org/10.5334/DSJ-2020-043</a> <a
+href="https://www.lens.org/lens/scholar/article/125-016-268-188-999/main">Lens
+link</a> Open Access</p>
+<p>Carroll, S. R., Herczog, E., Hudson, M., Russell, K., &amp; Stall, S.
+(2021). Operationalizing the CARE and FAIR Principles for Indigenous
+data futures. <em>Scientific Data</em>, <em>8</em>(1), 8–13. <a
+href="https://doi.org/10.1038/s41597-021-00892-0"
+class="uri">https://doi.org/10.1038/s41597-021-00892-0</a> <a
+href="https://www.nature.com/articles/s41597-021-00892-0"
+class="uri">https://www.nature.com/articles/s41597-021-00892-0</a> Open
+Access</p>
+<h2 id="indigenous-peoples-and-human-genomics">Indigenous Peoples and
+Human Genomics</h2>
+<p>Arbour, L., &amp; Cook, D. (2006). DNA on loan: Issues to consider
+when carrying out genetic research with aboriginal families and
+communities. Community Genetics, 9(3), 153–160. <a
+href="https://doi.org/10.1159/000092651"
+class="uri">https://doi.org/10.1159/000092651</a> <a
+href="https://www.lens.org/lens/scholar/article/077-868-122-028-539/main">Lens
+link</a> Paywall</p>
+<p>Tsosie, R. (2007). Cultural challenges to biotechnology: Native
+American genetic resources and the concept of cultural harm. Journal of
+Law, Medicine and Ethics, 35(3), 396–411. <a
+href="https://doi.org/10.1111/j.1748-720X.2007.00163.x"
+class="uri">https://doi.org/10.1111/j.1748-720X.2007.00163.x</a> <a
+href="https://www.lens.org/lens/scholar/article/059-749-266-027-071/main">Lens
+link</a> Paywall</p>
+<p>Reardon, J., &amp; TallBear, K. (2012). “Your DNA is Our History”,
+genomics, anthropology, and the construction of whiteness as property.
+Current Anthropology, 53(SUPPL. 5), 233–245. <a
+href="https://doi.org/10.1086/662629"
+class="uri">https://doi.org/10.1086/662629</a> <a
+href="https://www.lens.org/lens/scholar/article/141-439-615-916-917/main">Lens
+link</a> Open Access</p>
+<p>Caron, N. R., Chongo, M., Hudson, M., Arbour, L., Wasserman, W. W.,
+Robertson, S., … Wilcox, P. (2020). Indigenous Genomic Databases:
+Pragmatic Considerations and Cultural Contexts. Frontiers in Public
+Health, 8(April), 1–7. <a
+href="https://doi.org/10.3389/fpubh.2020.00111"
+class="uri">https://doi.org/10.3389/fpubh.2020.00111</a> <a
+href="https://www.lens.org/lens/scholar/article/047-389-039-058-60X/main">Lens
+link</a> Open Access</p>
+<p>Hudson, M., Garrison, N.A., Sterling, R. et al. Rights, interests and
+expectations: Indigenous perspectives on unrestricted access to genomic
+data. Nature Review Genetics 21, 377–384 (2020). <a
+href="https://doi.org/10.1038/s41576-020-0228-x"
+class="uri">https://doi.org/10.1038/s41576-020-0228-x</a> <a
+href="https://www.lens.org/lens/scholar/article/095-099-808-413-027/main">Lens
+link</a> Paywall</p>
+<p>Powell, K. (2021). The broken promise that undermines human genome
+research. Nature, 590, 198–201. <a
+href="https://doi.org/10.1038/d41586-021-00331-5"
+class="uri">https://doi.org/10.1038/d41586-021-00331-5</a> <a
+href="https://www.lens.org/lens/scholar/article/151-319-224-071-431/main">Lens
+link</a> Open Access</p>
+<p>Tsosie, K. S., Fox, K., &amp; Yracheta, J. M. (2021). Genomics data:
+the broken promise is to Indigenous people. Nature, 591(7851), 529. <a
+href="https://doi.org/10.1038/d41586-021-00758-w"
+class="uri">https://doi.org/10.1038/d41586-021-00758-w</a> <a
+href="https://www.lens.org/lens/scholar/article/048-022-574-660-833/main">Lens
+link</a> Open Access</p>
+<p>Tsosie, K. S., Yracheta, J. M., Kolopenuk, J. A., &amp; Geary, J.
+(2021). We Have “Gifted” Enough: Indigenous Genomic Data Sovereignty in
+Precision Medicine. The American Journal of Bioethics, 21(4), 72–75. <a
+href="https://doi.org/10.1080/15265161.2021.1891347"
+class="uri">https://doi.org/10.1080/15265161.2021.1891347</a> Open
+Access</p>
 <h2 id="ethnopharmacology">Ethnopharmacology</h2>
-<p>Rose, J., Quave, C. L., &amp; Islam, G. (2012). The four-sided triangle of ethics in bioprospecting: Pharmaceutical business, international politics, socio-environmental responsibility and the importance of local stakeholders. Ethnobiology and Conservation, 1(2012), 1–25. <a href="https://doi.org/10.15451/ec2012-8-1.3-1-25" class="uri">https://doi.org/10.15451/ec2012-8-1.3-1-25</a> <a href="https://www.lens.org/lens/scholar/article/020-496-348-760-084/main">Lens link</a> Open Access</p>
-<p>de la Parra, J., &amp; Quave, C. L. (2017). Ethnophytotechnology: Harnessing the Power of Ethnobotany with Biotechnology. Trends in Biotechnology, 35(9), 802–806. <a href="https://doi.org/10.1016/j.tibtech.2017.07.003" class="uri">https://doi.org/10.1016/j.tibtech.2017.07.003</a> <a href="https://www.lens.org/lens/scholar/article/028-711-251-573-83X/main">Lens link</a> Paywall</p>
+<p>Rose, J., Quave, C. L., &amp; Islam, G. (2012). The four-sided
+triangle of ethics in bioprospecting: Pharmaceutical business,
+international politics, socio-environmental responsibility and the
+importance of local stakeholders. Ethnobiology and Conservation,
+1(2012), 1–25. <a href="https://doi.org/10.15451/ec2012-8-1.3-1-25"
+class="uri">https://doi.org/10.15451/ec2012-8-1.3-1-25</a> <a
+href="https://www.lens.org/lens/scholar/article/020-496-348-760-084/main">Lens
+link</a> Open Access</p>
+<p>de la Parra, J., &amp; Quave, C. L. (2017). Ethnophytotechnology:
+Harnessing the Power of Ethnobotany with Biotechnology. Trends in
+Biotechnology, 35(9), 802–806. <a
+href="https://doi.org/10.1016/j.tibtech.2017.07.003"
+class="uri">https://doi.org/10.1016/j.tibtech.2017.07.003</a> <a
+href="https://www.lens.org/lens/scholar/article/028-711-251-573-83X/main">Lens
+link</a> Paywall</p>
 <h2 id="digital-sequence-information">Digital Sequence Information</h2>
-<p>Kupferschmidt, K. (2018). Biologists raise alarm over changes to biopiracy rules. Science, 361(6397), 14. <a href="https://doi.org/10.1126/science.361.6397.14" class="uri">https://doi.org/10.1126/science.361.6397.14</a> <a href="https://www.lens.org/lens/scholar/article/184-479-861-565-91X/main">Lens link</a> Paywall</p>
-<p>Aubry, S. (2019). The Future of Digital Sequence Information for Plant Genetic Resources for Food and Agriculture. Frontiers in Plant Science, 10(August), 1–10. <a href="https://doi.org/10.3389/fpls.2019.01046" class="uri">https://doi.org/10.3389/fpls.2019.01046</a> <a href="https://www.lens.org/lens/scholar/article/074-605-919-568-379/main">Lens link</a> Open Access</p>
-<p>Hammond, E. (2020). Finding Traditional Knowledge’s Place in the Digital Sequence Information Debate. Third World Network, 1–8 <a href="https://twn.my/title2/briefing_papers/twn/TWB_EHamm_Jul2020_D03.pdf" class="uri">https://twn.my/title2/briefing_papers/twn/TWB_EHamm_Jul2020_D03.pdf</a> Open Access</p>
-<p>Smyth, S. J., Macall, D. M., Phillips, P. W. B., &amp; de Beer, J. (2020). Implications of biological information digitization: Access and benefit sharing of plant genetic resources. Journal of World Intellectual Property, 23(3–4), 267–287. <a href="https://doi.org/10.1111/jwip.12151" class="uri">https://doi.org/10.1111/jwip.12151</a> <a href="https://www.lens.org/lens/scholar/article/146-012-184-337-380/main">Lens link</a> Open Access</p>
-<p>Ambler, J., Diallo, A. A., Dearden, P. K., Wilcox, P., Hudson, M., &amp; Tiffin, N. (2021). Including Digital Sequence Data in the Nagoya Protocol Can Promote Data Sharing. Trends in Biotechnology, 39(2), 116–125. <a href="https://doi.org/10.1016/j.tibtech.2020.06.009" class="uri">https://doi.org/10.1016/j.tibtech.2020.06.009</a> <a href="https://www.lens.org/lens/scholar/article/004-196-484-950-435/main">Lens link</a> Paywall</p>
-<p>Karger, E. J., &amp; Scholz, A. H. (2021). DSI, the Nagoya Protocol, and Stakeholders’ Concerns. Trends in Biotechnology, 39(2), 110–112. <a href="https://doi.org/10.1016/j.tibtech.2020.09.008" class="uri">https://doi.org/10.1016/j.tibtech.2020.09.008</a> <a href="https://www.lens.org/lens/scholar/article/136-113-291-195-672/main">Lens link</a> Paywall. This is a response to Ambler et al above.</p>
-<h2 id="ethics-guidelines-and-principles">Ethics, Guidelines and Principles</h2>
-<p>Australian Institute of Aboriginal and Torres Strait Islander Studies, T. (2020). AIATSIS Code of Ethics for Aboriginal and Torres Strait Islander Research. Retrieved from <a href="https://aiatsis.gov.au/research/ethical-research" class="uri">https://aiatsis.gov.au/research/ethical-research</a></p>
-<p>Hudson, M., Beaton, A., Milne, M., Port, W., Russell, K., Smith, B., … Wilcox, P. (2016). Te Mata Ira: Guidelines for Genomic Research with Māori. Retrieved from <a href="https://www.genomics-aotearoa.org.nz/sites/default/files/2019-03/Te-Mata-Ira-Genome-Research-Guidelines.pdf" class="uri">https://www.genomics-aotearoa.org.nz/sites/default/files/2019-03/Te-Mata-Ira-Genome-Research-Guidelines.pdf</a></p>
-<p>Government of Canada (2018) Tri-Council Policy Statement: Ethical conduct for research involving humans. <a href="https://ethics.gc.ca/eng/policy-politique_tcps2-eptc2_2018.html">https://ethics.gc.ca/eng/policy-politique_tcps2-eptc2_2018.html</a> Open Access. See in particular <a href="https://ethics.gc.ca/eng/tcps2-eptc2_2018_chapter9-chapitre9.html">Chapter 9: Research Involving the First Nations, Inuit and Métis Peoples of Canada</a></p>
+<p>Kupferschmidt, K. (2018). Biologists raise alarm over changes to
+biopiracy rules. Science, 361(6397), 14. <a
+href="https://doi.org/10.1126/science.361.6397.14"
+class="uri">https://doi.org/10.1126/science.361.6397.14</a> <a
+href="https://www.lens.org/lens/scholar/article/184-479-861-565-91X/main">Lens
+link</a> Paywall</p>
+<p>Aubry, S. (2019). The Future of Digital Sequence Information for
+Plant Genetic Resources for Food and Agriculture. Frontiers in Plant
+Science, 10(August), 1–10. <a
+href="https://doi.org/10.3389/fpls.2019.01046"
+class="uri">https://doi.org/10.3389/fpls.2019.01046</a> <a
+href="https://www.lens.org/lens/scholar/article/074-605-919-568-379/main">Lens
+link</a> Open Access</p>
+<p>Hammond, E. (2020). Finding Traditional Knowledge’s Place in the
+Digital Sequence Information Debate. Third World Network, 1–8 <a
+href="https://twn.my/title2/briefing_papers/twn/TWB_EHamm_Jul2020_D03.pdf"
+class="uri">https://twn.my/title2/briefing_papers/twn/TWB_EHamm_Jul2020_D03.pdf</a>
+Open Access</p>
+<p>Smyth, S. J., Macall, D. M., Phillips, P. W. B., &amp; de Beer, J.
+(2020). Implications of biological information digitization: Access and
+benefit sharing of plant genetic resources. Journal of World
+Intellectual Property, 23(3–4), 267–287. <a
+href="https://doi.org/10.1111/jwip.12151"
+class="uri">https://doi.org/10.1111/jwip.12151</a> <a
+href="https://www.lens.org/lens/scholar/article/146-012-184-337-380/main">Lens
+link</a> Open Access</p>
+<p>Ambler, J., Diallo, A. A., Dearden, P. K., Wilcox, P., Hudson, M.,
+&amp; Tiffin, N. (2021). Including Digital Sequence Data in the Nagoya
+Protocol Can Promote Data Sharing. Trends in Biotechnology, 39(2),
+116–125. <a href="https://doi.org/10.1016/j.tibtech.2020.06.009"
+class="uri">https://doi.org/10.1016/j.tibtech.2020.06.009</a> <a
+href="https://www.lens.org/lens/scholar/article/004-196-484-950-435/main">Lens
+link</a> Paywall</p>
+<p>Intergovernmental Technical Working Group on Aquatic Genetic
+Resources for Food and Agriculture (2021). “Digital Sequence
+Information” on Genetic Resources for Food and Agriculture: Innovation
+Opportunities, Challenges and Implications. <a
+href="http://www.fao.org/3/nf577en/nf577en.pdf"
+class="uri">http://www.fao.org/3/nf577en/nf577en.pdf</a> Open Access</p>
+<p>Karger, E. J., &amp; Scholz, A. H. (2021). DSI, the Nagoya Protocol,
+and Stakeholders’ Concerns. Trends in Biotechnology, 39(2), 110–112. <a
+href="https://doi.org/10.1016/j.tibtech.2020.09.008"
+class="uri">https://doi.org/10.1016/j.tibtech.2020.09.008</a> <a
+href="https://www.lens.org/lens/scholar/article/136-113-291-195-672/main">Lens
+link</a> Paywall. This is a response to Ambler et al above.</p>
+<p>Brink, M. van Hintum, T. (2021). Practical consequences of digital
+sequence information (DSI) definitions and access and benefit-sharing
+scenarios from a plant genebank’s perspective. Plants People Planet
+ppp3.10201. <a href="https://doi.org/10.1002/ppp3.10201"
+class="uri">https://doi.org/10.1002/ppp3.10201</a> Open Access</p>
+<p>African Group of Negotiators on Biodiversity-Ad Hoc Group on Digital
+Sequence Information (2019). Digital Sequence Information on Genetic
+Resources: Submission of Views and Information on Terminology, Scope,
+and Domestic Measures on Access and Benefit Sharing. <a
+href="https://www.cbd.int/abs/DSI-views/2019/AfricanGroup-DSI.pdf"
+class="uri">https://www.cbd.int/abs/DSI-views/2019/AfricanGroup-DSI.pdf</a>
+Open Access</p>
+<p>Karger, E. du Plessis, P. Meyer, H. (2019). Digital Sequence
+Information on Genetic Resources (DSI): An Introductory Guide for
+African Policymakers and Stakeholders. The ABS Capacity Development
+Initiative <a
+href="https://unctad.org/system/files/official-document/ditc-ted-05052020-BioTradeSSC-DSI.pdf"
+class="uri">https://unctad.org/system/files/official-document/ditc-ted-05052020-BioTradeSSC-DSI.pdf</a>
+Open Access</p>
+<p>Lawson, C. Rourke, M. (2020). Digital sequence information as a
+marine genetic resource under the proposed UNCLOS legally binding
+instrument. Marine Policy 122: 103878. <a
+href="https://www.sciencedirect.com/science/article/abs/pii/S0308597X19308061"
+class="uri">https://www.sciencedirect.com/science/article/abs/pii/S0308597X19308061</a>
+Paywall</p>
+<p>Oldham, P. (2020). Digital Sequence Information - Technical Aspects.
+European Commission on technical aspects of digital sequence
+information. &lt;<a
+href="https://ec.europa.eu/environment/nature/biodiversity/international/abs/pdf/Final_Report_technical_a"
+class="uri">https://ec.europa.eu/environment/nature/biodiversity/international/abs/pdf/Final_Report_technical_a</a>
+spects_of_DSI.pdf&gt; Open Access</p>
+<p>UK Parliament (2020). Digital sequence information. UK Parliament
+Postnote 630. UK Parliament, London. 7pp. <a
+href="https://researchbriefings.files.parliament.uk/documents/POST-PN-0630/POST-PN-0630.pdf"
+class="uri">https://researchbriefings.files.parliament.uk/documents/POST-PN-0630/POST-PN-0630.pdf</a>
+Open Access</p>
+<h2
+id="traditional-knowledge-and-digital-sequence-information">Traditional
+Knowledge and Digital Sequence Information</h2>
+<p>Delegation of Switzerland (2021). An International Disclosure Of
+Source Requirement for Genetic Resources and Associated Traditional
+Knowledge in Patent Applications - A Contribution to the Evidence-Based
+Approach. WIPO/GRTKF/IC/41/12. Intergovernmental Committee on
+Intellectual Property and Genetic Resources, Traditional Knowledge and
+Folklore, Forty-First Session, Geneva, August 30 to September 3, 2021.
+<a
+href="https://www.wipo.int/edocs/mdocs/tk/en/wipo_grtkf_ic_41/wipo_grtkf_ic_41_12.pdf"
+class="uri">https://www.wipo.int/edocs/mdocs/tk/en/wipo_grtkf_ic_41/wipo_grtkf_ic_41_12.pdf</a>
+Open Access</p>
+<p>Ke, Y. Chen, J. (2020). Interrelationship between genetic resources
+and traditional knowledge - An example from earthworm fibrinolytic
+enzyme Biotechnology Law Report39: 440-451. <a
+href="https://www.liebertpub.com/doi/pdf/10.1089/blr.2020.29190.yk"
+class="uri">https://www.liebertpub.com/doi/pdf/10.1089/blr.2020.29190.yk</a>
+Open Access</p>
+<p>Parra, F. Casas, A. Begazo, D. Paco, A. Márquez, E. Cruz, A. Segovia,
+J. Torres-García, I. Zarazúa, M. Lizárraga, L. Torres-Guevara, J.
+(2021). Natural and cultural processes influencing gene flow among wild
+(atoq papa), weedy (araq papa and k’ipa papa), and crop potatoes in the
+Andean Region of Southern Peru. Frontiers in Ecology and Evolution <a
+href="https://www.frontiersin.org/articles/10.3389/fevo.2021.617969/full"
+class="uri">https://www.frontiersin.org/articles/10.3389/fevo.2021.617969/full</a>
+Open Access</p>
+<p>Rourke, M. (2018). Who are indigenous and local communities and what
+is traditional knowledge for virus access and benefit-sharing? A textual
+analysis of the Convention on Biological Diversity and Its Nagoya
+Protocol. Journal of Law and Medicine 25(3):707-726. <a
+href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3161573"
+class="uri">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3161573</a>
+Open Access</p>
+<p>Syam, N. Romero, T. (2021). Misappropriation of Genetic Resources and
+Associated Traditional Knowledge: Challenges Posed by Intellectual
+Property and Genetic Sequence Information. Research Paper 130. The South
+Centre, Geneva. <a
+href="https://www.southcentre.int/wp-content/uploads/2021/04/RP-130.pdf"
+class="uri">https://www.southcentre.int/wp-content/uploads/2021/04/RP-130.pdf</a>
+Open Access</p>
+<p>WIPO (2020). Key Questions on Patent Disclosure Requirements for
+Genetic Resources and Traditional Knowledge. 2nd ed. World Intellectual
+Property Organization (WIPO), Geneva. <a
+href="https://www.wipo.int/edocs/pubdocs/en/wipo_pub_1047_19.pdf"
+class="uri">https://www.wipo.int/edocs/pubdocs/en/wipo_pub_1047_19.pdf</a>
+Open Access</p>
+<p>Wynberg, R. Andersen, R. Laird, S. Kusena, K. Prip, C. Westengen, O.
+(2021). Farmers’ rights and digital sequence information: Crisis or
+opportunity to reclaim stewardship over agrobiodiversity? Frontiers in
+Plant Science <a href="https://doi.org/10.3389/fpls.2021.686728"
+class="uri">https://doi.org/10.3389/fpls.2021.686728</a> Open Access</p>
+<h2 id="ethics-guidelines-and-principles">Ethics, Guidelines and
+Principles</h2>
+<p>Australian Institute of Aboriginal and Torres Strait Islander
+Studies, T. (2020). AIATSIS Code of Ethics for Aboriginal and Torres
+Strait Islander Research. Retrieved from <a
+href="https://aiatsis.gov.au/research/ethical-research"
+class="uri">https://aiatsis.gov.au/research/ethical-research</a> Open
+Access</p>
+<p>Hudson, M., Beaton, A., Milne, M., Port, W., Russell, K., Smith, B.,
+… Wilcox, P. (2016). Te Mata Ira: Guidelines for Genomic Research with
+Māori. Retrieved from <a
+href="https://www.genomics-aotearoa.org.nz/sites/default/files/2019-03/Te-Mata-Ira-Genome-Research-Guidelines.pdf"
+class="uri">https://www.genomics-aotearoa.org.nz/sites/default/files/2019-03/Te-Mata-Ira-Genome-Research-Guidelines.pdf</a>
+Open Access</p>
+<p>Government of Canada (2018) Tri-Council Policy Statement: Ethical
+conduct for research involving humans. <a
+href="https://ethics.gc.ca/eng/policy-politique_tcps2-eptc2_2018.html">https://ethics.gc.ca/eng/policy-politique_tcps2-eptc2_2018.html</a>
+Open Access. See in particular <a
+href="https://ethics.gc.ca/eng/tcps2-eptc2_2018_chapter9-chapitre9.html">Chapter
+9: Research Involving the First Nations, Inuit and Métis Peoples of
+Canada</a> Open Access</p>
 <h2 id="the-nagoya-protocol-and-abs">The Nagoya Protocol and ABS</h2>
-<p>Wynberg, R., Schroeder, D., &amp; Chennells, R. (2009). Indigenous Peoples, Consent and Benefit Sharing: Lessons from the San-Hoodia Case. Retrieved from <a href="https://link.springer.com/book/10.1007/978-90-481-3123-5" class="uri">https://link.springer.com/book/10.1007/978-90-481-3123-5</a> Paywall (Book)</p>
-<p>Talaat, W. I. A. W. (2013). Protection of the Associated Traditional Knowledge on Genetic Resources: Beyond the Nagoya Protocol. Procedia - Social and Behavioral Sciences, 91, 673–678. <a href="https://doi.org/10.1016/j.sbspro.2013.08.468">https://doi.org/10.1016/j.sbspro.2013.08.468</a> <a href="https://www.lens.org/lens/scholar/article/092-953-359-928-463/main">Lens link</a> Open Access</p>
-<p>Hammond, E., (2017). Sequence Data and Benefit Sharing: DivSeek’s Pitfalls Show Need for Appropriate Policy. Biodiversity, Knowledge &amp; Rights Series no. 5. Third World Network (TWN), Penang, Malaysia. 40 pp. <a href="https://www.twn.my/title2/series/bkr/bkr005.htmOA" class="uri">https://www.twn.my/title2/series/bkr/bkr005.htmOA</a> Open Access</p>
-<p>Laird, S., International, P., &amp; Wynberg, R. (2018). A Fact Finding and Scoping Study on Digital Sequence Information on Genetic Resources in the Context of the Convention on Biological Diversity and Nagoya Protocol (January). <a href="https://www.cbd.int/doc/c/e95a/4ddd/4baea2ec772be28edcd10358/dsi-ahteg-2018-01-03-en.pdf">https://www.cbd.int/doc/c/e95a/4ddd/4baea2ec772be28edcd10358/dsi-ahteg-2018-01-03-en.pdf</a> Open Access</p>
-<p>Lawson, C., &amp; Adhikari, K. (Eds.). (2018). Biodiversity, Genetic Resources and Intellectual Property: Developments in Access and Benefit Sharing (1st ed.). Routledge. <a href="https://doi.org/10.4324/9781315098517" class="uri">https://doi.org/10.4324/9781315098517</a> <a href="https://www.lens.org/lens/scholar/article/113-261-910-666-788/main">Lens link</a> Paywall (Book)</p>
-<p>Wynberg, R., &amp; Laird, S. A. (2018). Fast Science and Sluggish Policy: The Herculean Task of Regulating Biodiscovery. Trends in Biotechnology, 36(1), 1–3. <a href="https://doi.org/10.1016/j.tibtech.2017.09.002" class="uri">https://doi.org/10.1016/j.tibtech.2017.09.002</a> <a href="https://www.lens.org/lens/scholar/article/070-462-022-251-464/main">Lens link</a> Open Access</p>
-<p>Watanabe, M. E. (2019). The Nagoya protocol: The conundrum of defining digital sequence information. BioScience, 69(6), 480. <a href="https://doi.org/10.1093/biosci/biz034" class="uri">https://doi.org/10.1093/biosci/biz034</a> <a href="https://www.lens.org/lens/scholar/article/022-476-015-755-37X/main">Lens link</a> Open Access</p>
+<p>Wynberg, R., Schroeder, D., &amp; Chennells, R. (2009). Indigenous
+Peoples, Consent and Benefit Sharing: Lessons from the San-Hoodia Case.
+Retrieved from <a
+href="https://link.springer.com/book/10.1007/978-90-481-3123-5"
+class="uri">https://link.springer.com/book/10.1007/978-90-481-3123-5</a>
+Paywall (Book)</p>
+<p>Talaat, W. I. A. W. (2013). Protection of the Associated Traditional
+Knowledge on Genetic Resources: Beyond the Nagoya Protocol. Procedia -
+Social and Behavioral Sciences, 91, 673–678. <a
+href="https://doi.org/10.1016/j.sbspro.2013.08.468">https://doi.org/10.1016/j.sbspro.2013.08.468</a>
+<a
+href="https://www.lens.org/lens/scholar/article/092-953-359-928-463/main">Lens
+link</a> Open Access</p>
+<p>Hammond, E., (2017). Sequence Data and Benefit Sharing: DivSeek’s
+Pitfalls Show Need for Appropriate Policy. Biodiversity, Knowledge &amp;
+Rights Series no. 5. Third World Network (TWN), Penang, Malaysia. 40 pp.
+<a href="https://www.twn.my/title2/series/bkr/bkr005.htmOA"
+class="uri">https://www.twn.my/title2/series/bkr/bkr005.htmOA</a> Open
+Access</p>
+<p>Laird, S., International, P., &amp; Wynberg, R. (2018). A Fact
+Finding and Scoping Study on Digital Sequence Information on Genetic
+Resources in the Context of the Convention on Biological Diversity and
+Nagoya Protocol (January). <a
+href="https://www.cbd.int/doc/c/e95a/4ddd/4baea2ec772be28edcd10358/dsi-ahteg-2018-01-03-en.pdf">https://www.cbd.int/doc/c/e95a/4ddd/4baea2ec772be28edcd10358/dsi-ahteg-2018-01-03-en.pdf</a>
+Open Access</p>
+<p>Lawson, C., &amp; Adhikari, K. (Eds.). (2018). Biodiversity, Genetic
+Resources and Intellectual Property: Developments in Access and Benefit
+Sharing (1st ed.). Routledge. <a
+href="https://doi.org/10.4324/9781315098517"
+class="uri">https://doi.org/10.4324/9781315098517</a> <a
+href="https://www.lens.org/lens/scholar/article/113-261-910-666-788/main">Lens
+link</a> Paywall (Book)</p>
+<p>Wynberg, R., &amp; Laird, S. A. (2018). Fast Science and Sluggish
+Policy: The Herculean Task of Regulating Biodiscovery. Trends in
+Biotechnology, 36(1), 1–3. <a
+href="https://doi.org/10.1016/j.tibtech.2017.09.002"
+class="uri">https://doi.org/10.1016/j.tibtech.2017.09.002</a> <a
+href="https://www.lens.org/lens/scholar/article/070-462-022-251-464/main">Lens
+link</a> Open Access</p>
+<p>Watanabe, M. E. (2019). The Nagoya protocol: The conundrum of
+defining digital sequence information. BioScience, 69(6), 480. <a
+href="https://doi.org/10.1093/biosci/biz034"
+class="uri">https://doi.org/10.1093/biosci/biz034</a> <a
+href="https://www.lens.org/lens/scholar/article/022-476-015-755-37X/main">Lens
+link</a> Open Access</p>
+<p>***Kharb, D. (2020). Regulation of ABS obligations in digital
+sequence information over genetic resources: The legal conundrum under
+CBD and Nagoya Protocol Framework. Gene Technology 10(3) <a
+href="https://www.longdom.org/open-access/regulation-of-abs-obligations-in-digital-sequence-informationover-"
+class="uri">https://www.longdom.org/open-access/regulation-of-abs-obligations-in-digital-sequence-informationover-</a>
+genetic-resources-the-legal-conundrum-under-cbd-and-nagoya-prot-80883.html
+Open Access</p>
+<p>Kamau, E, C. (2019)(ed.). Implementation of the Nagoya Protocol:
+Fulfilling new obligations among emerging issues. BfN-Skripten 564.
+Bundesamt für Naturschutz (BfN), Bonn. 142pp. <a
+href="https://community.abs-sustainabledevelopment.net/wp-content/uploads/2020/06/Skript564.pdf"
+class="uri">https://community.abs-sustainabledevelopment.net/wp-content/uploads/2020/06/Skript564.pdf</a>
+Open Access</p>
+<p>Laird, S. Wynberg, R. Rourke, M. Humphries, F. Muller, M. Lawson, C.
+(2020). Rethink the expansion of access and benefit sharing. Science.
+367(1200), 10.1126/science.aba9609. <a
+href="https://www.researchgate.net/publication/339887387_Rethink_the_expansion_of_access_and_benefit_sharing"
+class="uri">https://www.researchgate.net/publication/339887387_Rethink_the_expansion_of_access_and_benefit_sharing</a></p>
 <h2 id="critiques-of-abs">Critiques of ABS</h2>
-<p>Bond, M. R., &amp; Scott, D. (2020). Digital biopiracy and the (dis)assembling of the Nagoya Protocol. Geoforum, 117(June), 24–32. <a href="https://doi.org/10.1016/j.geoforum.2020.09.001" class="uri">https://doi.org/10.1016/j.geoforum.2020.09.001</a> <a href="https://www.lens.org/lens/scholar/article/011-319-600-903-101/main">Lens link</a> Open Access</p>
-<p>Neumann, D., Borisenko, A. V., Coddington, J. A., Häuser, C. L., Butler, C. R., Casino, A., … Giere, P. (2018). Global biodiversity research tied up by juridical interpretations of access and benefit sharing. Organisms Diversity and Evolution, 18(1). <a href="https://doi.org/10.1007/s13127-017-0347-1" class="uri">https://doi.org/10.1007/s13127-017-0347-1</a> <a href="https://www.lens.org/lens/scholar/article/033-019-173-353-259/main">Lens link</a> Paywall (Available via <a href="https://www.researchgate.net/publication/321313754_Global_biodiversity_research_tied_up_by_juridical_interpretations_of_access_and_benefit_sharing">ResearchGate</a>)</p>
-<p>Smyth, S. J., &amp; Charles, T. C. (2021). Impacts on International Research Collaborations from DSI/ABS Uncertainty. Trends in Biotechnology, 39(5), 430–433. <a href="https://doi.org/10.1016/j.tibtech.2020.10.011" class="uri">https://doi.org/10.1016/j.tibtech.2020.10.011</a> <a href="https://www.lens.org/lens/scholar/article/008-445-530-174-298/main">Lens link</a> Open Access</p>
-<h2 id="novel-approaches-to-indigenous-knowledge-genomics-and-abs">Novel Approaches to Indigenous Knowledge, Genomics and ABS</h2>
-<p>Robinson, D., &amp; Raven, M. (2017). Identifying and Preventing Biopiracy in Australia: patent landscapes and legal geographies for plants with Indigenous Australian uses. Australian Geographer, 48(3), 311–331. <a href="https://doi.org/10.1080/00049182.2016.1229240" class="uri">https://doi.org/10.1080/00049182.2016.1229240</a> <a href="https://www.lens.org/lens/scholar/article/137-968-300-004-04X/main">Lens link</a> Paywall</p>
-<p>Collier-Robinson, L., Rayne, A., Rupene, M., Thoms, C., &amp; Steeves, T. (2019). Embedding indigenous principles in genomic research of culturally significant species: A conservation genomics case study. New Zealand Journal of Ecology, 43(3). <a href="https://doi.org/10.20417/nzjecol.43.36" class="uri">https://doi.org/10.20417/nzjecol.43.36</a> <a href="https://www.lens.org/lens/scholar/article/045-961-968-677-933/main">Lens link</a> Open Access</p>
-<p>Inwood, S. N., McLaughlin, G. M., Buckley, T. R., Cox, M. P., Handley, K. M., Steeves, T. E., … Dearden, P. K. (2020). Opportunities for modern genetic technologies to maintain and enhance aotearoa New Zealand’s bioheritage. New Zealand Journal of Ecology, 44(2), 1–13. <a href="https://doi.org/10.20417/nzjecol.44.22" class="uri">https://doi.org/10.20417/nzjecol.44.22</a> <a href="https://www.lens.org/lens/scholar/article/024-701-441-809-01X/main">Lens link</a> Open Access</p>
-<p>Aubry, S., Frison, C., Medaglia, J. C., Frison, E., Jaspars, M., Rabone, M., … Zimmeren, E. (2021). Bringing access and benefit sharing into the digital age. Plants, People, Planet, (January), 1–8. <a href="https://doi.org/10.1002/ppp3.10186" class="uri">https://doi.org/10.1002/ppp3.10186</a> <a href="https://www.lens.org/lens/scholar/article/013-541-209-258-701/main">Lens link</a> Open Access</p>
-<p>Liggins, L., Hudson, M., &amp; Anderson, J. (2021). Creating space for Indigenous perspectives on access and benefit-sharing: encouraging researcher use of the Local Contexts Notices. Molecular Ecology, (April), 1–6. <a href="https://doi.org/10.1111/mec.15918" class="uri">https://doi.org/10.1111/mec.15918</a> Open Access</p>
-<p>Anderson, J., &amp; Hudson, M. (2020). The Biocultural Labels Initiative: Supporting Indigenous rights in data derived from genetic resources. Biodiversity Information Science and Standards, 4. <a href="https://doi.org/10.3897/biss.4.59230" class="uri">https://doi.org/10.3897/biss.4.59230</a> <a href="https://www.lens.org/lens/scholar/article/044-786-718-614-233/main">Lens link</a> Open Access</p>
-<p>Anderson, J., Hudson, M. (2021). STEM Inclusive Teaching Practices Webinar Series: The Biocultural Labels Initiative. iDigBio, QUBES Educational Resources. <a href="https://doi:10.25334/E6SC-PP18" class="uri">https://doi:10.25334/E6SC-PP18</a> Open Access</p>
-<p>For Biocultural labels also see the <a href="https://localcontexts.org/">local contexts website</a></p>
-<p>Robinson, D. F., &amp; Raven, M. (2020). Recognising Indigenous customary law of totemic plant species: Challenges and pathways. Geographical Journal, 186(1), 31–44. <a href="https://doi.org/10.1111/geoj.12320" class="uri">https://doi.org/10.1111/geoj.12320</a> <a href="https://www.lens.org/lens/scholar/article/046-544-266-448-465/main">Lens link</a> Paywall</p>
-<p>Sherman, B., Henry, R., (2021) Access to biodiversity for food production: Reconciling open access digital sequence information with access and benefit sharing, Molecular Plant, <a href="https://doi.org/10.1016/j.molp.2021.03.005" class="uri">https://doi.org/10.1016/j.molp.2021.03.005</a> <a href="https://www.lens.org/lens/scholar/article/037-891-879-282-162/main">Lens link</a> Paywall</p>
-<p><strong>If you would like to suggest additional reading materials please contact jasminejrkindness at gmail dot com</strong></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>Bond, M. R., &amp; Scott, D. (2020). Digital biopiracy and the
+(dis)assembling of the Nagoya Protocol. Geoforum, 117(June), 24–32. <a
+href="https://doi.org/10.1016/j.geoforum.2020.09.001"
+class="uri">https://doi.org/10.1016/j.geoforum.2020.09.001</a> <a
+href="https://www.lens.org/lens/scholar/article/011-319-600-903-101/main">Lens
+link</a> Open Access</p>
+<p>Neumann, D., Borisenko, A. V., Coddington, J. A., Häuser, C. L.,
+Butler, C. R., Casino, A., … Giere, P. (2018). Global biodiversity
+research tied up by juridical interpretations of access and benefit
+sharing. Organisms Diversity and Evolution, 18(1). <a
+href="https://doi.org/10.1007/s13127-017-0347-1"
+class="uri">https://doi.org/10.1007/s13127-017-0347-1</a> <a
+href="https://www.lens.org/lens/scholar/article/033-019-173-353-259/main">Lens
+link</a> Paywall (Available via <a
+href="https://www.researchgate.net/publication/321313754_Global_biodiversity_research_tied_up_by_juridical_interpretations_of_access_and_benefit_sharing">ResearchGate</a>)</p>
+<p>Smyth, S. J., &amp; Charles, T. C. (2021). Impacts on International
+Research Collaborations from DSI/ABS Uncertainty. Trends in
+Biotechnology, 39(5), 430–433. <a
+href="https://doi.org/10.1016/j.tibtech.2020.10.011"
+class="uri">https://doi.org/10.1016/j.tibtech.2020.10.011</a> <a
+href="https://www.lens.org/lens/scholar/article/008-445-530-174-298/main">Lens
+link</a> Open Access</p>
+<p>Bagley, M. Perron-Welch, F (2021). Study to Identify Specific Cases
+of Genetic Resources and Traditional Knowledge Associated with Genetic
+Resources that Occur in Transboundary Situations or for Which it is Not
+Possible to Grant or Obtain Prior Informed Consent. CBD/SBI/3/15/Add.1.
+Secretariat of the Convention on Biological Diversity (SCBD), Montreal.
+<a
+href="https://www.cbd.int/doc/c/c850/cee6/e368619e14ae3e3fb4d84de9/sbi-03-15-add1-en.pdf"
+class="uri">https://www.cbd.int/doc/c/c850/cee6/e368619e14ae3e3fb4d84de9/sbi-03-15-add1-en.pdf</a></p>
+<h2 id="novel-approaches-to-indigenous-knowledge-genomics-and-abs">Novel
+Approaches to Indigenous Knowledge, Genomics and ABS</h2>
+<p>Robinson, D., &amp; Raven, M. (2017). Identifying and Preventing
+Biopiracy in Australia: patent landscapes and legal geographies for
+plants with Indigenous Australian uses. Australian Geographer, 48(3),
+311–331. <a href="https://doi.org/10.1080/00049182.2016.1229240"
+class="uri">https://doi.org/10.1080/00049182.2016.1229240</a> <a
+href="https://www.lens.org/lens/scholar/article/137-968-300-004-04X/main">Lens
+link</a> Paywall</p>
+<p>Collier-Robinson, L., Rayne, A., Rupene, M., Thoms, C., &amp;
+Steeves, T. (2019). Embedding indigenous principles in genomic research
+of culturally significant species: A conservation genomics case study.
+New Zealand Journal of Ecology, 43(3). <a
+href="https://doi.org/10.20417/nzjecol.43.36"
+class="uri">https://doi.org/10.20417/nzjecol.43.36</a> <a
+href="https://www.lens.org/lens/scholar/article/045-961-968-677-933/main">Lens
+link</a> Open Access</p>
+<p>Inwood, S. N., McLaughlin, G. M., Buckley, T. R., Cox, M. P.,
+Handley, K. M., Steeves, T. E., … Dearden, P. K. (2020). Opportunities
+for modern genetic technologies to maintain and enhance aotearoa New
+Zealand’s bioheritage. New Zealand Journal of Ecology, 44(2), 1–13. <a
+href="https://doi.org/10.20417/nzjecol.44.22"
+class="uri">https://doi.org/10.20417/nzjecol.44.22</a> <a
+href="https://www.lens.org/lens/scholar/article/024-701-441-809-01X/main">Lens
+link</a> Open Access</p>
+<p>Aubry, S., Frison, C., Medaglia, J. C., Frison, E., Jaspars, M.,
+Rabone, M., … Zimmeren, E. (2021). Bringing access and benefit sharing
+into the digital age. Plants, People, Planet, (January), 1–8. <a
+href="https://doi.org/10.1002/ppp3.10186"
+class="uri">https://doi.org/10.1002/ppp3.10186</a> <a
+href="https://www.lens.org/lens/scholar/article/013-541-209-258-701/main">Lens
+link</a> Open Access</p>
+<p>Liggins, L., Hudson, M., &amp; Anderson, J. (2021). Creating space
+for Indigenous perspectives on access and benefit-sharing: encouraging
+researcher use of the Local Contexts Notices. Molecular Ecology,
+(April), 1–6. <a href="https://doi.org/10.1111/mec.15918"
+class="uri">https://doi.org/10.1111/mec.15918</a> Open Access</p>
+<p>Anderson, J., &amp; Hudson, M. (2020). The Biocultural Labels
+Initiative: Supporting Indigenous rights in data derived from genetic
+resources. Biodiversity Information Science and Standards, 4. <a
+href="https://doi.org/10.3897/biss.4.59230"
+class="uri">https://doi.org/10.3897/biss.4.59230</a> <a
+href="https://www.lens.org/lens/scholar/article/044-786-718-614-233/main">Lens
+link</a> Open Access</p>
+<p>Anderson, J., Hudson, M. (2021). STEM Inclusive Teaching Practices
+Webinar Series: The Biocultural Labels Initiative. iDigBio, QUBES
+Educational Resources. <a href="https://doi:10.25334/E6SC-PP18"
+class="uri">https://doi:10.25334/E6SC-PP18</a> Open Access</p>
+<p>For Biocultural labels also see the <a
+href="https://localcontexts.org/">local contexts website</a></p>
+<p>Robinson, D. F., &amp; Raven, M. (2020). Recognising Indigenous
+customary law of totemic plant species: Challenges and pathways.
+Geographical Journal, 186(1), 31–44. <a
+href="https://doi.org/10.1111/geoj.12320"
+class="uri">https://doi.org/10.1111/geoj.12320</a> <a
+href="https://www.lens.org/lens/scholar/article/046-544-266-448-465/main">Lens
+link</a> Paywall</p>
+<p>Sherman, B., Henry, R., (2021) Access to biodiversity for food
+production: Reconciling open access digital sequence information with
+access and benefit sharing, Molecular Plant, <a
+href="https://doi.org/10.1016/j.molp.2021.03.005"
+class="uri">https://doi.org/10.1016/j.molp.2021.03.005</a> <a
+href="https://www.lens.org/lens/scholar/article/037-891-879-282-162/main">Lens
+link</a> Paywall</p>
+<h2 id="indigenous-peoples-and-anthropogenic-environments">Indigenous
+Peoples and Anthropogenic environments</h2>
+<p>Armstrong, C., J. Miller, A. C. McAlvay, P. M. Ritchie, and D.
+Lepofsky. 2021. Historical Indigenous Land-Use Explains Plant Functional
+Trait Diversity. Ecology and Society 26(2):6. <a
+href="https://doi.org/10.5751/ES-12322-260206"
+class="uri">https://doi.org/10.5751/ES-12322-260206</a></p>
+<p>Levis, C., Flores, B., Moreira, P., Luize, B., Alves, R.,
+Franco-Moraes, J., Lins, J., Konings, E., Peña-Claros, M., Bongers, F.,
+Costa, F. &amp; Clement, C. (2018) How People Domesticated Amazonian
+Forests. Frontiers of Ecological Evolution. <a
+href="https://doi.org/10.3389/fevo.2017.00171"
+class="uri">https://doi.org/10.3389/fevo.2017.00171</a></p>
+<p>Lyons, N., Hoffmann, T., Miller, D., Martindale, A., Ames, K., &amp;
+Blake, M. (2021). Were the Ancient Coast Salish Farmers? A Story of
+Origins. American Antiquity, 86(3), 504-525. <a
+href="doi:10.1017/aaq.2020.115"
+class="uri">doi:10.1017/aaq.2020.115</a></p>
+<p>Carney, M., Tushingham, S., MaLaughlin, T., d’Alpoim Guedes, J.,
+(2021) Harvesting strategies as evidence for 4000 years of camas
+(Camassia quamash) management in the North American Columbia Plateau <a
+href="https://doi.org/10.1098/rsos.202213"
+class="uri">https://doi.org/10.1098/rsos.202213</a></p>
+<p>Girard, F., Hall, I. &amp; Frison, C. (2022) Biocultural Rights,
+Indigenous Peoples and Local Communities - Protecting Culture and the
+Environment, Routeledge <a
+href="https://www.routledge.com/Biocultural-Rights-Indigenous-Peoples-and-Local-Communities-Protecting/Girard-Hall-Frison/p/book/9781032000817"
+class="uri">https://www.routledge.com/Biocultural-Rights-Indigenous-Peoples-and-Local-Communities-Protecting/Girard-Hall-Frison/p/book/9781032000817</a></p>
+<p>Human world. Nature Ecology &amp; Evolution, 1, 0106 (2017). <a
+href="https://doi.org/10.1038/s41559-017-0106"
+class="uri">https://doi.org/10.1038/s41559-017-0106</a></p>
+<p>Jefferson, D. (2020) Towards an Ecological Intellectual Property,
+Routeledge <a
+href="https://www.routledge.com/Towards-an-Ecological-Intellectual-Property-Reconfiguring-Relationships/Jefferson/p/book/9780367429799"
+class="uri">https://www.routledge.com/Towards-an-Ecological-Intellectual-Property-Reconfiguring-Relationships/Jefferson/p/book/9780367429799</a></p>
+<p>Michon, G (2005) Domesticating forests - How farmers manage forest
+resources, IRD, CIFOR and ICRAF <a
+href="https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers15-02/010062999.pdf"
+class="uri">https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers15-02/010062999.pdf</a></p>
+<p>Miner, B., De Meester, L., Pfrender, M., Lampert, W. &amp; Hairston,
+N. (2012) Linking genes to communities and ecosystems: Daphnia as an
+ecogenomic model, Biological Sciences <a
+href="https://doi.org/10.1098/rspb.2011.2404"
+class="uri">https://doi.org/10.1098/rspb.2011.2404</a></p>
+<p>Piperno, D., McMichael, C., Pitman, N., Andino, J., Paredes, M.,
+Heijink, B. &amp; Torres-Montenegro, L. (2021) A 5,000-year vegetation
+and fire history fortierra firmeforests in the Medio Putumayo-Algodón
+watersheds,northeastern Peru. PNAS. <a
+href="https://doi.org/10.1073/pnas.2022213118"
+class="uri">https://doi.org/10.1073/pnas.2022213118</a></p>
+<p>Smithsonian. (2021) Indigenous Peoples Were Stewards of the Western
+Amazon <a
+href="https://www.si.edu/newsdesk/releases/indigenous-peoples-were-stewards-western-amazon"
+class="uri">https://www.si.edu/newsdesk/releases/indigenous-peoples-were-stewards-western-amazon</a></p>
+<p>Sullivan, A., Bird, D. &amp; Perry, G. (2017) Human behaviour as a
+long-term ecological driver of non-human evolution. Nature Ecology and
+Evolution 1, 0065. <a href="https://doi.org/10.1038/s41559-016-0065"
+class="uri">https://doi.org/10.1038/s41559-016-0065</a></p>
+<p>Turner, N. (2020) Plants, People, Places, McGill-Queen’s University
+Press <a
+href="https://www.mqup.ca/plants--people--and-places-products-9780228001836.php"
+class="uri">https://www.mqup.ca/plants--people--and-places-products-9780228001836.php</a></p>
+<p>Turner, N., Armstrong, C. &amp; Lepofsky, D. (2021) Adopting a Root:
+Documenting Ecological and Cultural Signatures of Plant Translocations
+in Northwestern North America, American Anthropologist, 123: 879-897. <a
+href="https://doi.org/10.1111/aman.13658"
+class="uri">https://doi.org/10.1111/aman.13658</a></p>
+<p>Wall, J. (2022) The Cultural Value of Trees, Routeledge, <a
+href="https://www.routledge.com/The-Cultural-Value-of-Trees-Folk-Value-and-Biocultural-Conservation/Wall/p/book/9780367336158"
+class="uri">https://www.routledge.com/The-Cultural-Value-of-Trees-Folk-Value-and-Biocultural-Conservation/Wall/p/book/9780367336158</a></p>
+<h2 id="further-resources">Further Resources</h2>
+<p>ABS Biotrade - Digital Sequence Information on Genetic Resources <a
+href="https://www.abs-biotrade.info/topics/specific-issues/dsi/"
+class="uri">https://www.abs-biotrade.info/topics/specific-issues/dsi/</a></p>
+<p>ABS Information Forum - Digital Sequence Information (DSI) <a
+href="https://nagoyaprotocol.myspecies.info/node/27"
+class="uri">https://nagoyaprotocol.myspecies.info/node/27</a></p>
+<p>Oldham, Paul; Kindness, Jasmine; Hardison, Preston (2020-).
+Indigenous Peoples and Digital Sequence Information <a
+href="https://poldham.github.io/dsi/"
+class="uri">https://poldham.github.io/dsi/</a></p>
+<p>Digital Sequence Information resources with an emphasis on TK and
+indigenous peoples. Parsons, Jill (2020). Benefit-Sharing, Nagoya, and
+DSI - Oh My! Ecological Society of America (ESA) Field Notes Blog. <a
+href="https://www.esa.org/esablog/2020/05/11/benefit-sharing-nagoya-and-dsi-oh-my/"
+class="uri">https://www.esa.org/esablog/2020/05/11/benefit-sharing-nagoya-and-dsi-oh-my/</a></p>
+<p>Future Ecologies (2022) Forest Garden <a
+href="https://www.futureecologies.net/listen/fe-4-1-forest-garden"
+class="uri">https://www.futureecologies.net/listen/fe-4-1-forest-garden</a></p>
+<p>Global Youth Biodiversity Network (2021). A Primer on Digital
+Sequence Information - Session 1 <a
+href="https://www.youtube.com/watch?v=rh1i7QiTgyg"
+class="uri">https://www.youtube.com/watch?v=rh1i7QiTgyg</a></p>
+<p>Hudson, Maui (2021). Recognising Indigenous Rights in Digital
+Sequence Information <a
+href="https://www.youtube.com/watch?v=xF8RJzWyVHE"
+class="uri">https://www.youtube.com/watch?v=xF8RJzWyVHE</a></p>
+<p>ABS Initiative Webinar on the Role of IPLCs and associated TK in the
+DSI debate: <a href="https://youtu.be/1ozPDfHQBy8"
+class="uri">https://youtu.be/1ozPDfHQBy8</a> (English version) Also in
+French at: <a
+href="https://www.youtube.com/watch?v=HX_vp8kPRNc&amp;t=3s"
+class="uri">https://www.youtube.com/watch?v=HX_vp8kPRNc&amp;t=3s</a></p>
+<p>Summary report of the webinar: <a
+href="https://www.abs-biotrade.info/fileadmin/Downloads/3.%20TOPICS/SPECIFIC%20ISSUES/DSI/BELOW/Webinar-Report-Role-of-IPLCs-and-aTK-in-DSI-debate-06-2021.pdf"
+class="uri">https://www.abs-biotrade.info/fileadmin/Downloads/3.%20TOPICS/SPECIFIC%20ISSUES/DSI/BELOW/Webinar-Report-Role-of-IPLCs-and-aTK-in-DSI-debate-06-2021.pdf</a></p>
+<p><strong>If you would like to suggest additional reading materials
+please contact jasminejrkindness at gmail dot com</strong></p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
