@@ -14,6 +14,7 @@ You can access presentations on dsi of interest to indigenous peoples on this pa
 
 A video walkthough on the Global Biodiversity Information Facility and the decision by its governing body to adopt Creative Commons licences for over 2.5 billion species occurrence records including over 16 million records for sequence data. The details are discussed in detail in [Oldham and Kindness 2022 Sharing Digital Sequence Information](https://zenodo.org/record/6557191). The video is intended more as a practical walk through for members of the International Indigenous Forum on Biodiversity interested in understanding the potential relevance of experience at GBIF for debates on DSI.
 
+- An English transcript of the video is [here](https://github.com/poldham/dsi/blob/master/presentations/dsi_video_transcript.md).
 
 
 ```{r, eval=TRUE, echo=FALSE, message=FALSE, fig.align='center'}
