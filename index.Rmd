@@ -106,6 +106,9 @@ technical aspects of digital sequence information.
 <https://ec.europa.eu/environment/nature/biodiversity/international/abs/pdf/Final_Report_technical_a
 spects_of_DSI.pdf> Open Access
 
+Oldham, Paul. and Kindness, Jasmine (2022). Sharing Digital Sequence Information. Study for the European Commission.
+<https://zenodo.org/record/6557191> Open Access
+
 UK Parliament (2020). Digital sequence information. UK Parliament Postnote 630. UK Parliament,
 London. 7pp. <https://researchbriefings.files.parliament.uk/documents/POST-PN-0630/POST-PN-0630.pdf> Open Access
 
