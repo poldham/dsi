@@ -1,0 +1,36 @@
+---
+title: "Presentations"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+You can access presentations on dsi of interest to indigenous peoples on this page or in the presentations folder of the [GitHub repository](https://github.com/poldham/dsi/tree/master/presentations). If you participate in the International Indigenous Forum on Biodiversity (IIFB) or have a presentation that is directly relevant to indigenous peoples and digital sequence information, please feel welcome to ask for it to be included by contacting jasminejrkindness at gmail dot com. Please do not include sensitive photos or other data in presentations that are shared on the web. 
+
+
+### DSI and Creative Commons Licences at the Global Biodiversity Information Facility
+
+A video walkthough on the Global Biodiversity Information Facility and the decision by its governing body to adopt Creative Commons licences for over 2.5 billion species occurrence records including over 16 million records for sequence data. The details are discussed in detail in [Oldham and Kindness 2022 Sharing Digital Sequence Information](https://zenodo.org/record/6557191). The video is intended more as a practical walk through for members of the International Indigenous Forum on Biodiversity interested in understanding the potential relevance of experience at GBIF for debates on DSI.
+
+
+
+```{r, eval=TRUE, echo=FALSE, message=FALSE, fig.align='center'}
+library(vembedr)
+
+embed_url("https://youtu.be/N9GAHioKqcc")
+```
+
+
+### Summary of the Sharing Digital Sequence Information study
+
+A presentation summarising the independent study by [Oldham and Kindness 2022 Sharing Digital Sequence Information](https://zenodo.org/record/6557191) for the European Commission. 
+
+- The presentation is [here](https://github.com/poldham/dsi/blob/master/presentations/oldham_kindness_summary.pdf). Click the download button to obtain the .pdf.
+
+### Operational Model
+
+An operational model for the relationship between sequences deposited under open licences and a distributed Global Biodiversity Fund. 
+
+- model is [here](https://github.com/poldham/dsi/blob/master/presentations/operational-model.pdf). Click the download button. Click the download button to obtain the .pdf.
